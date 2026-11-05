@@ -35,7 +35,9 @@ def draw_overlay(image, table, tokens, path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--images", nargs="+", type=Path, help="One or more cropped table images")
+    source = parser.add_mutually_exclusive_group()
+    source.add_argument("--images", nargs="+", type=Path, help="One or more cropped table images")
+    source.add_argument("--interactive", action="store_true", help="Select images in a terminal menu")
     parser.add_argument("--image-dir", type=Path, default=LOCAL_DATA / "datasets/PubTables-1M-structure/"
                         "PubTables-1M-Structure_Images_Test/PubTables-1M-Structure_Images_Test")
     parser.add_argument("--model-dir", type=Path, default=default_model_dir(ROOT))
@@ -47,7 +49,18 @@ def main():
     args = parser.parse_args()
     if not 0 < args.threshold <= 1 or not 1 <= args.threads <= 64 or not 0 < args.ocr_scale <= 4:
         parser.error("threshold must be in (0,1], threads in [1,64], OCR scale in (0,4]")
-    images = [p.resolve() for p in (args.images or [args.image_dir / (s + ".jpg") for s in DEFAULT_SAMPLES])]
+    samples = [args.image_dir / (s + ".jpg") for s in DEFAULT_SAMPLES]
+    if args.interactive or (args.images is None and sys.stdin.isatty()):
+        from tatr_ocr.interactive import select_images
+        # The repository examples also work without the full local dataset.
+        choices = [p if p.is_file() else ROOT / "examples/pubtables-smoke/input" / p.name for p in samples]
+        selected = select_images(choices)
+        if not selected:
+            print("已取消，没有运行识别。")
+            return
+    else:
+        selected = args.images or samples
+    images = [p.resolve() for p in selected]
     for path in images + [args.ocr_python, args.model_dir / "model.safetensors"]:
         if not path.is_file():
             parser.error(f"Missing file: {path}")
