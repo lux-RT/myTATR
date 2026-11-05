@@ -1,162 +1,90 @@
 # myTATR：TATR + OCR 表格提取
 
-将现成的 TATR 表格结构识别模型与 OCR 接起来，从**已裁剪的表格图片**输出带文字的单元格。
+**运行脚本，自动测试项目自带的十张表格图片。无需选择菜单、拖入图片或填写参数。**
 
-这是独立的整合项目，不是对 TATR 网络的改造：不修改权重、不重新训练。TATR 使用本地 Transformers 格式权重；OCR 使用 **RapidOCR-ONNXRuntime 1.4.4 自带的 PP-OCRv4 模型**，并非安装 PaddleOCR Python 包。
+使用微软 TATR 预训练结构模型与 RapidOCR（PP-OCRv4 / ONNX Runtime），输出带文字的单元格。没有修改模型权重或重新训练。
 
-```text
-同一张表格图片
-  ├─ Transformers / TATR → 行、列、表头、合并区域
-  └─ RapidOCR / ONNX Runtime → 文字框、文字、置信度
-                          ↓
-         官方后处理重建单元格 + 本项目适配层分配文字
-                          ↓
-              JSON / HTML / CSV / 标注 PNG
-```
+## 当前电脑怎么运行
 
-## 在当前电脑上运行
-
-**推荐：在 PyCharm 的 Terminal（终端）打开本项目后，输入：**
+在 PyCharm 打开 `D:\Projects\Codex\小毕设\myTATR`，进入底部 **Terminal（终端）**，输入：
 
 ```text
 .\run.bat
 ```
 
-CMD 和 PowerShell 都能使用这一条命令。脚本会自动寻找已经安装的 TATR 环境，无需手动激活。
+CMD 和 PowerShell 都适用。脚本自动选择项目 `.venv-tatr`，或相邻 `PubTables-1M复现/.venv-download` 中已有的 Python 环境。
 
-终端会显示：
+运行后直接处理十张图片，并显示 `[1/10]` 至 `[10/10]` 的结构识别进度。每次结果放进 `outputs/时间/` 新文件夹。打开其中的 `.html` 查看文字表格，打开 `_overlay.png` 查看识别框；`.csv` 可用 Excel 打开，`.json` 保存完整预测。
+
+PyCharm 已配置好 TATR 解释器时，也可以直接右键运行 `run_table_ocr.py`，同样自动处理这十张。
+
+## 十张图片是什么
+
+图片原文件已从本地下载的 **PubTables-1M 测试集**复制到 [`sample_images/`](sample_images)，来自十篇不同论文：
+
+| 编号 | 类型 | 标注行 × 列 |
+|---|---|---:|
+| 01 | 紧凑双列表 | 3 × 2 |
+| 02 | 长双列表 | 17 × 2 |
+| 03 | 分组行标题 | 25 × 3 |
+| 04 | 跨行合并单元格 | 20 × 3 |
+| 05 | 多列数值矩阵 | 16 × 8 |
+| 06 | 纵向长表 | 41 × 3 |
+| 07 | 宽表与多级表头 | 10 × 12 |
+| 08 | 复杂合并表头 | 11 × 8 |
+| 09 | 长段落文字表 | 4 × 4 |
+| 10 | 扁平多列表 | 3 × 11 |
+
+这里的行列数用于描述样本，不是模型准确率。[查看图片总览](docs/ten-samples-preview.png)；原始文件名、来源文章和 SHA-256 在 [`sample_images/manifest.json`](sample_images/manifest.json)。图片未修改，XML 标注不参与推理。
+
+十张图片均已实跑并生成结果，见 [默认十图测试报告](docs/十图测试报告.md)。
+
+## 模型和代码怎么连接
 
 ```text
-TATR + OCR 图片测试
-  1. 选择示例图片
-  2. 输入/拖入图片或文件夹路径
-  q. 退出
+sample_images 中的十张图片
+  ├─ TATR → 行、列、表头、合并区域
+  └─ RapidOCR → 文字、坐标、置信度
+               ↓
+      单元格重建、文字分配、结果导出
 ```
 
-- 选 `1`：显示四张示例图，输入编号（如 `1`、`1,3`、`2-4`），回车开始识别。
-- 选 `2`：输入或拖入图片路径，支持带空格、中文的路径。输入多个路径时分别加引号。
-- 输入文件夹路径：列出该文件夹中的图片，再按编号选择；不递归搜索子文件夹。
-- 图片列表每页 20 张，`n` 下一页、`p` 上一页；回车选择当前页，`all` 明确选择整个列表，`q` 取消。
+TATR 权重仍可使用相邻 `PubTables-1M复现/models/table-transformer-structure-recognition/` 中已有的三个文件，OCR 权重随独立 `.venv-ocr` 环境中的 RapidOCR 安装包提供。仓库不上传大模型或完整数据集。
 
-识别完成后，查看终端最后的 `Outputs:` 路径，在对应目录打开 `.html` 表格或 `_overlay.png` 标注图。测试下一批时再次运行 `.\run.bat`。
+主要文件：`run_table_ocr.py`（入口）、`ocr_worker.py`（OCR 进程）、`tatr_ocr/fusion.py`（单元格与文字融合）、`tatr_ocr/export.py`（导出）。微软原始后处理源码在 `third_party/tatr/postprocess.py`，未修改；详细原理见 [OCR 接入说明](docs/OCR接入说明.md)。
 
-如果已经激活项目的 Python 环境，也可以输入 `python run_table_ocr.py`，在真实终端中会自动进入选择菜单。PyCharm 的 Run 控制台如需强制使用菜单，在 Parameters 中填 `--interactive`。
+## 新电脑安装
 
-本地布局如下，数据和模型继续使用此前下载的文件，不复制大文件：
-
-```text
-小毕设/
-├─ PubTables-1M复现/
-│  ├─ .venv-download/                  # 已有 TATR CPU 环境；新增 PyMuPDF 1.26.6
-│  ├─ models/table-transformer-structure-recognition/
-│  └─ datasets/PubTables-1M-structure/...
-└─ myTATR/
-   ├─ .venv-ocr/                       # 本次创建的独立 OCR 环境
-   └─ run_table_ocr.py
-```
-
-在 `myTATR` 文件夹打开 PowerShell，也可以直接调用已有解释器，通过菜单选择测试图片：
-
-```powershell
-$env:PYTHONUTF8 = '1'
-$env:HF_HUB_OFFLINE = '1'
-$env:TRANSFORMERS_OFFLINE = '1'
-& '..\PubTables-1M复现\.venv-download\Scripts\python.exe' run_table_ocr.py --out outputs/my-test
-```
-
-`--out` 必须指向空目录或不存在的目录，避免覆盖已有结果。
-
-显式传入 `--images` 时会直接运行指定图片，不显示选择菜单，适合批处理。非交互执行且没有图片参数时仍使用原来的四张默认数据集样本。
-
-识别自己的表格图片：
-
-```powershell
-& '..\PubTables-1M复现\.venv-download\Scripts\python.exe' run_table_ocr.py `
-  --images 'D:\tables\table1.jpg' 'D:\tables\table2.png' `
-  --out outputs/custom-tables
-```
-
-`--images` 中的图片文件名须互不重复（忽略大小写），不能命名为 `summary` 或 `ocr`，它们用于批次元数据。
-
-## 从新电脑安装
-
-推荐 Windows x64、Python 3.12，先确认 `python --version`。以下命令会新建两个虚拟环境；CPU 版无需安装 CUDA：
+推荐 Windows x64、Python 3.12。在项目根目录执行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/setup.ps1
 & '.\.venv-tatr\Scripts\python.exe' prepare_model.py
-& '.\.venv-tatr\Scripts\python.exe' run_table_ocr.py `
-  --images 'D:\tables\table1.jpg' --out outputs/first-run
+.\run.bat
 ```
 
-首次安装/下载需要联网。模型准备完成后，TATR 加载设置为 `local_files_only=True`；OCR 权重随锁定版本的包安装，推理不需要联网。
+安装和首次准备 TATR 模型需要联网，之后从本地权重推理。模型固定 revision 和 SHA-256 校验保存在 `prepare_model.py`；两个环境的依赖版本由 `requirements-*-lock.txt` 锁定。
 
-如已有模型或另一个 OCR 环境，显式指定：
+## 可选：测试其他图片
 
-```powershell
-& '.\.venv-tatr\Scripts\python.exe' run_table_ocr.py `
-  --model-dir 'D:\models\table-transformer-structure-recognition' `
-  --ocr-python 'D:\envs\ocr\Scripts\python.exe' `
-  --images 'D:\tables\table1.jpg' --out outputs/first-run
+默认运行无需参数。已有环境中也可继续使用命令行参数：
+
+```text
+.\run.bat --images "D:\tables\table1.jpg" "D:\tables\table2.png"
 ```
 
-模型默认先寻找本仓库 `models/table-transformer-structure-recognition`，再寻找相邻的 `PubTables-1M复现/models/...`，均不存在时提示缺失文件。模型固定在 revision `f4d4bdc85c3fe4b1fa49658882a5d38bbdd0f343`，`prepare_model.py` 会校验三个文件的 SHA-256。
+或者 `--image-dir "D:\tables"` 处理指定目录内的图片（不递归）。输入文件名须互不重复，不能命名为 `summary` 或 `ocr`。自定义 `--out` 时需指定空目录，避免覆盖结果。
 
-## 输出文件怎么用
-
-每张输入生成：
-
-| 文件 | 内容 |
-|---|---|
-| `图片名.json` | 原始预测框、OCR tokens、单元格坐标与文字、跨行跨列索引、未分配文字、歧义文字索引、耗时 |
-| `图片名.html` | 可直接在浏览器打开的文字表格，保留 `rowspan` / `colspan` |
-| `图片名.csv` | UTF-8 BOM 表格，可由 Excel 打开；CSV 无合并信息，合并内容只写入左上格 |
-| `图片名_overlay.png` | 蓝色为单元格，紫色为合并单元格，绿色为 OCR 文字框 |
-| `ocr.json` | 本批次独立 OCR 的原始整合结果 |
-| `summary.json` | 所有图片的行列数、文字分配数量和分阶段耗时 |
-
-`row_nums` / `column_nums` 从 0 开始。`ocr_confidence` 是 OCR 模型分数，不能当成准确率；`ambiguous_token_indices` 标记同时覆盖多个单元格的 OCR 行框。
-
-## 添加了哪些代码
-
-| 文件 | 作用 |
-|---|---|
-| [`run_table_ocr.py`](run_table_ocr.py) | 完整运行入口：检查输入、调用独立 OCR 进程、本地加载 TATR、调用融合和导出 |
-| [`ocr_worker.py`](ocr_worker.py) | 初始化 RapidOCR，在 CPU 上检测并识别文字；默认先放大 2 倍；向主程序输出 JSON |
-| [`tatr_ocr/ocr_adapter.py`](tatr_ocr/ocr_adapter.py) | 把四边形文字框转成 `bbox` 和 TATR token 字段；按实际横纵缩放比例恢复原图坐标 |
-| [`tatr_ocr/fusion.py`](tatr_ocr/fusion.py) | 适配 TATR 类别与官方后处理；先保留结构再填字；按文字面积覆盖比例进行唯一分配；记录表外和歧义文字 |
-| [`tatr_ocr/export.py`](tatr_ocr/export.py) | 导出合并单元格 HTML、正确处理换行和引号的 CSV；保留单元格内多行文本 |
-| [`tatr_ocr/inputs.py`](tatr_ocr/inputs.py) | 解析本地模型位置，阻止输入文件名与结果/元数据发生冲突 |
-| [`prepare_model.py`](prepare_model.py) | 为新环境下载并校验固定版本的 TATR 模型 |
-| [`scripts/setup.ps1`](scripts/setup.ps1) | 创建独立 TATR/OCR 环境，按锁定依赖安装 |
-| [`third_party/tatr/postprocess.py`](third_party/tatr/postprocess.py) | 直接复用、未修改的微软后处理源码；固定提交、校验值、许可证随仓库保留 |
-| [`tests/`](tests) | 坐标、文字归属、空白行、合并表头、HTML/CSV 和文件名冲突回归测试 |
-
-原有 `download_pubtables.py`、数据集、TATR `config.json` / `model.safetensors` 均未修改。新仓库中的业务代码都是新增文件；未修改 TATR 的网络、损失函数或训练逻辑。
-
-## 测试与实际效果
+## 测试和边界
 
 ```powershell
 & '..\PubTables-1M复现\.venv-download\Scripts\python.exe' -m unittest discover -s tests -v
 ```
 
-从新电脑安装后，用 `.venv-tatr\Scripts\python.exe` 执行相同命令即可。单元测试不需要模型和数据集。
+新安装环境可换成 `.venv-tatr\Scripts\python.exe`。单元测试无需模型和完整数据集。
 
-本地实际测试了四张 PubTables-1M 测试集图片。详见 [实测报告](examples/pubtables-smoke/REPORT.md) 和 [代码接入说明](docs/OCR接入说明.md)。输入图片的 XML 标注不参与推理。
+当前输入是裁剪好的论文表格图片，尚不包含整页找表格、手机拍照透视矫正。OCR 对百分号、不等号、上下标和英文空格仍可能出错，长文字也可能跨列；文字框分配数量、置信度不等于 OCR 准确率。
 
-仓库附有这四张小样本及其结果。新电脑无需下载整套数据，也可以复跑：
+首轮四图集成报告保留在 [`examples/pubtables-smoke/REPORT.md`](examples/pubtables-smoke/REPORT.md)，属于历史测试，与当前默认十张不同。
 
-```powershell
-$images = (Get-ChildItem -LiteralPath 'examples/pubtables-smoke/input' -Filter '*.jpg').FullName
-& '.\.venv-tatr\Scripts\python.exe' run_table_ocr.py --images $images --out outputs/reproduce
-```
-
-已知边界：目前验证的是裁剪好的英文论文表格，不包含整页表格检测或真实拍照场景的透视矫正。长英文词的空格、`≥`、百分号、上下标可能识别错误；OCR 行框也可能跨列。没有完整文字真值，未计算 OCR 准确率、TEDS 或 GriTS，文字框分配数量不代表准确率。
-
-## 来源
-
-- [Microsoft Table Transformer](https://github.com/microsoft/table-transformer)
-- [TATR Transformers checkpoint](https://huggingface.co/microsoft/table-transformer-structure-recognition)
-- [RapidOCR](https://github.com/RapidAI/RapidOCR)
-- [PubTables-1M dataset](https://huggingface.co/datasets/bsmock/pubtables-1m)
-- [第三方来源和许可证说明](third_party/README.md)
+来源：[Microsoft TATR](https://github.com/microsoft/table-transformer)、[TATR 权重](https://huggingface.co/microsoft/table-transformer-structure-recognition)、[RapidOCR](https://github.com/RapidAI/RapidOCR)、[PubTables-1M](https://huggingface.co/datasets/bsmock/pubtables-1m)。[第三方来源与许可](third_party/README.md)，[样本数据许可](sample_images/DATA_LICENSE.txt)。

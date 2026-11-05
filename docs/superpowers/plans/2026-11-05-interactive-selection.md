@@ -1,5 +1,7 @@
 # Terminal Image Selection Implementation Plan
 
+> Superseded at the user's request by `2026-11-05-fixed-ten-samples.md`. The terminal menu and its implementation have been removed; launch now runs the ten bundled images directly.
+
 > **For agentic workers:** Execute inline with superpowers:executing-plans. User explicitly requested terminal selection and previously authorized updating the existing GitHub branch.
 
 **Goal:** Let the user launch `run.bat` in PyCharm Terminal, choose images interactively, and run the existing TATR + OCR pipeline.

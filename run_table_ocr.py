@@ -6,15 +6,11 @@ import json
 import os
 from pathlib import Path
 import subprocess
-import sys
 from time import perf_counter
 
-from tatr_ocr.inputs import default_model_dir, validate_stems
+from tatr_ocr.inputs import default_model_dir, resolve_images, validate_stems
 
 ROOT = Path(__file__).resolve().parent
-LOCAL_DATA = ROOT.parent / "PubTables-1M复现"
-DEFAULT_SAMPLES = ["PMC1262774_table_0", "PMC1064078_table_0",
-                   "PMC1064082_table_1", "PMC1064879_table_0"]
 
 
 def venv_python(name):
@@ -33,34 +29,29 @@ def draw_overlay(image, table, tokens, path):
     canvas.save(path)
 
 
-def main():
+def build_parser():
     parser = argparse.ArgumentParser(description=__doc__)
-    source = parser.add_mutually_exclusive_group()
-    source.add_argument("--images", nargs="+", type=Path, help="One or more cropped table images")
-    source.add_argument("--interactive", action="store_true", help="Select images in a terminal menu")
-    parser.add_argument("--image-dir", type=Path, default=LOCAL_DATA / "datasets/PubTables-1M-structure/"
-                        "PubTables-1M-Structure_Images_Test/PubTables-1M-Structure_Images_Test")
+    parser.add_argument("--images", nargs="+", type=Path, help="One or more cropped table images")
+    parser.add_argument("--image-dir", type=Path, default=ROOT / "sample_images",
+                        help="Image directory; defaults to the ten bundled samples")
     parser.add_argument("--model-dir", type=Path, default=default_model_dir(ROOT))
     parser.add_argument("--ocr-python", type=Path, default=venv_python(".venv-ocr"))
     parser.add_argument("--out", type=Path, default=ROOT / "outputs" / datetime.now().strftime("%Y%m%d-%H%M%S"))
     parser.add_argument("--threshold", type=float, default=.5)
     parser.add_argument("--ocr-scale", type=float, default=2.0)
     parser.add_argument("--threads", type=int, default=4)
+    return parser
+
+
+def main():
+    parser = build_parser()
     args = parser.parse_args()
     if not 0 < args.threshold <= 1 or not 1 <= args.threads <= 64 or not 0 < args.ocr_scale <= 4:
         parser.error("threshold must be in (0,1], threads in [1,64], OCR scale in (0,4]")
-    samples = [args.image_dir / (s + ".jpg") for s in DEFAULT_SAMPLES]
-    if args.interactive or (args.images is None and sys.stdin.isatty()):
-        from tatr_ocr.interactive import select_images
-        # The repository examples also work without the full local dataset.
-        choices = [p if p.is_file() else ROOT / "examples/pubtables-smoke/input" / p.name for p in samples]
-        selected = select_images(choices)
-        if not selected:
-            print("已取消，没有运行识别。")
-            return
-    else:
-        selected = args.images or samples
-    images = [p.resolve() for p in selected]
+    try:
+        images = resolve_images(args.images, args.image_dir)
+    except ValueError as error:
+        parser.error(str(error))
     for path in images + [args.ocr_python, args.model_dir / "model.safetensors"]:
         if not path.is_file():
             parser.error(f"Missing file: {path}")
@@ -71,6 +62,7 @@ def main():
     if args.out.exists() and any(args.out.iterdir()):
         parser.error("Output directory is not empty; choose a new --out to preserve earlier results")
     args.out.mkdir(parents=True, exist_ok=True)
+    print(f"Starting TATR + OCR on {len(images)} images.", flush=True)
 
     # OCR is isolated from the established torch/Transformers environment.
     subprocess.run([str(args.ocr_python.resolve()), str(ROOT / "ocr_worker.py"),
@@ -93,7 +85,7 @@ def main():
         args.model_dir, local_files_only=True, use_pretrained_backbone=False).eval()
     load_seconds = perf_counter() - start
     results = []
-    for path in images:
+    for image_index, path in enumerate(images, 1):
         with Image.open(path) as source:
             image = ImageOps.exif_transpose(source).convert("RGB")
         record = by_path[str(path)]
@@ -127,7 +119,7 @@ def main():
                         "ocr_tokens": len(record["tokens"]), "assigned_tokens": table["assigned_tokens"],
                         "unassigned_tokens": len(table["unassigned_tokens"]),
                         "ambiguous_tokens": len(table["ambiguous_token_indices"]), "seconds": result["seconds"]})
-        print(f"TATR+OCR {path.stem}: {table['rows']} rows x {table['columns']} columns, "
+        print(f"[{image_index}/{len(images)}] TATR+OCR {path.stem}: {table['rows']} rows x {table['columns']} columns, "
               f"{table['assigned_tokens']}/{len(record['tokens'])} text boxes assigned", flush=True)
     summary = {"device": "cpu", "tatr": "microsoft/table-transformer-structure-recognition",
                "torch": torch.__version__, "transformers": version("transformers"),

@@ -12,7 +12,7 @@ if not exist "%TATR_PYTHON%" (
     exit /b 1
 )
 pushd "%~dp0"
-"%TATR_PYTHON%" "%~dp0run_table_ocr.py" --interactive %*
+"%TATR_PYTHON%" "%~dp0run_table_ocr.py" %*
 set "TATR_EXIT=%ERRORLEVEL%"
 popd
 exit /b %TATR_EXIT%

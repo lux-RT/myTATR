@@ -1,0 +1,174 @@
+{
+  "device": "cpu",
+  "tatr": "microsoft/table-transformer-structure-recognition",
+  "torch": "2.8.0+cpu",
+  "transformers": "4.57.1",
+  "ocr_engine": "RapidOCR-ONNXRuntime",
+  "ocr_version": "1.4.4",
+  "onnxruntime_version": "1.23.2",
+  "ocr_scale": 2.0,
+  "model_load_seconds": 0.1478,
+  "images": [
+    {
+      "image": "01_small_PMC1156949_table_0.jpg",
+      "rows": 3,
+      "columns": 2,
+      "cells": 6,
+      "populated_cells": 6,
+      "ocr_tokens": 10,
+      "assigned_tokens": 6,
+      "unassigned_tokens": 4,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 2.0113,
+        "tatr": 0.7326,
+        "fusion": 0.0024
+      }
+    },
+    {
+      "image": "02_two-column_PMC1087493_table_3.jpg",
+      "rows": 17,
+      "columns": 2,
+      "cells": 34,
+      "populated_cells": 34,
+      "ocr_tokens": 35,
+      "assigned_tokens": 34,
+      "unassigned_tokens": 1,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 3.1989,
+        "tatr": 0.4128,
+        "fusion": 0.034
+      }
+    },
+    {
+      "image": "03_grouped_PMC1079832_table_0.jpg",
+      "rows": 25,
+      "columns": 3,
+      "cells": 65,
+      "populated_cells": 65,
+      "ocr_tokens": 93,
+      "assigned_tokens": 66,
+      "unassigned_tokens": 27,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 2.6892,
+        "tatr": 0.6695,
+        "fusion": 0.1647
+      }
+    },
+    {
+      "image": "04_rowspan_PMC1064111_table_0.jpg",
+      "rows": 20,
+      "columns": 3,
+      "cells": 49,
+      "populated_cells": 49,
+      "ocr_tokens": 53,
+      "assigned_tokens": 49,
+      "unassigned_tokens": 4,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 1.5021,
+        "tatr": 0.6588,
+        "fusion": 0.0771
+      }
+    },
+    {
+      "image": "05_matrix_PMC1064135_table_1.jpg",
+      "rows": 16,
+      "columns": 8,
+      "cells": 118,
+      "populated_cells": 98,
+      "ocr_tokens": 104,
+      "assigned_tokens": 102,
+      "unassigned_tokens": 2,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 2.5149,
+        "tatr": 0.4838,
+        "fusion": 0.309
+      }
+    },
+    {
+      "image": "06_tall_PMC1175991_table_2.jpg",
+      "rows": 41,
+      "columns": 3,
+      "cells": 123,
+      "populated_cells": 123,
+      "ocr_tokens": 127,
+      "assigned_tokens": 125,
+      "unassigned_tokens": 2,
+      "ambiguous_tokens": 7,
+      "seconds": {
+        "ocr": 4.4425,
+        "tatr": 0.6594,
+        "fusion": 0.363
+      }
+    },
+    {
+      "image": "07_wide_PMC1079800_table_2.jpg",
+      "rows": 10,
+      "columns": 12,
+      "cells": 110,
+      "populated_cells": 103,
+      "ocr_tokens": 105,
+      "assigned_tokens": 103,
+      "unassigned_tokens": 2,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 3.081,
+        "tatr": 0.2985,
+        "fusion": 0.2896
+      }
+    },
+    {
+      "image": "08_merged_PMC1274274_table_0.jpg",
+      "rows": 11,
+      "columns": 8,
+      "cells": 75,
+      "populated_cells": 54,
+      "ocr_tokens": 57,
+      "assigned_tokens": 54,
+      "unassigned_tokens": 3,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 2.4538,
+        "tatr": 0.3107,
+        "fusion": 0.1342
+      }
+    },
+    {
+      "image": "09_paragraph_PMC1315350_table_0.jpg",
+      "rows": 4,
+      "columns": 4,
+      "cells": 16,
+      "populated_cells": 16,
+      "ocr_tokens": 97,
+      "assigned_tokens": 96,
+      "unassigned_tokens": 1,
+      "ambiguous_tokens": 1,
+      "seconds": {
+        "ocr": 8.0658,
+        "tatr": 0.5911,
+        "fusion": 0.0401
+      }
+    },
+    {
+      "image": "10_flat_PMC1087860_table_0.jpg",
+      "rows": 3,
+      "columns": 11,
+      "cells": 33,
+      "populated_cells": 32,
+      "ocr_tokens": 33,
+      "assigned_tokens": 32,
+      "unassigned_tokens": 1,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 2.4525,
+        "tatr": 0.1704,
+        "fusion": 0.0379
+      }
+    }
+  ],
+  "limitations": "Cropped-table smoke test; token assignment rate is NOT OCR accuracy or GriTS."
+}

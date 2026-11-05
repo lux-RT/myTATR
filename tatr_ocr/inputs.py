@@ -1,5 +1,21 @@
 """Resolve local inputs without overwriting batch metadata or another image."""
 
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff", ".webp"}
+
+
+def resolve_images(explicit, directory):
+    """Explicit files override the default, script-relative sample directory."""
+    if explicit is not None:
+        return [path.resolve() for path in explicit]
+    if not directory.is_dir():
+        raise ValueError(f"Missing image directory: {directory}")
+    paths = sorted((p.resolve() for p in directory.iterdir()
+                    if p.is_file() and p.suffix.lower() in IMAGE_EXTENSIONS),
+                   key=lambda path: path.name.casefold())
+    if not paths:
+        raise ValueError(f"No supported images found in directory: {directory}")
+    return paths
+
 
 def validate_stems(paths):
     stems = [p.stem.casefold() for p in paths]

@@ -1,0 +1,168 @@
+{
+  "dataset": "https://huggingface.co/datasets/bsmock/pubtables-1m",
+  "split": "test",
+  "license": "CDLA-Permissive-2.0",
+  "selection_note": "Ten distinct articles, selected by structural diversity and visual review; XML is used only for sampling, never as model input.",
+  "samples": [
+    {
+      "file": "01_small_PMC1156949_table_0.jpg",
+      "source_file": "PMC1156949_table_0.jpg",
+      "category": "small",
+      "description": "紧凑双列表",
+      "size": [
+        288,
+        129
+      ],
+      "annotated_rows": 3,
+      "annotated_columns": 2,
+      "spanning_cells": 0,
+      "projected_row_headers": 0,
+      "sha256": "beb18fb192abead84cc88b9a9472e84d2da5bf495d3c9d3cf025b77883be6ace",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1156949/"
+    },
+    {
+      "file": "02_two-column_PMC1087493_table_3.jpg",
+      "source_file": "PMC1087493_table_3.jpg",
+      "category": "two-column",
+      "description": "长双列表",
+      "size": [
+        610,
+        310
+      ],
+      "annotated_rows": 17,
+      "annotated_columns": 2,
+      "spanning_cells": 0,
+      "projected_row_headers": 0,
+      "sha256": "68cdf3cf81c391b31cc9688881a4ecdbe04252853141c70832372c0217491ff9",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1087493/"
+    },
+    {
+      "file": "03_grouped_PMC1079832_table_0.jpg",
+      "source_file": "PMC1079832_table_0.jpg",
+      "category": "grouped",
+      "description": "分组行标题",
+      "size": [
+        370,
+        425
+      ],
+      "annotated_rows": 25,
+      "annotated_columns": 3,
+      "spanning_cells": 0,
+      "projected_row_headers": 5,
+      "sha256": "ce4959bffc9c7034033a9f43e1dc2f51c3fd4eb4ee9ee0bac095ff61647cf804",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1079832/"
+    },
+    {
+      "file": "04_rowspan_PMC1064111_table_0.jpg",
+      "source_file": "PMC1064111_table_0.jpg",
+      "category": "rowspan",
+      "description": "跨行合并单元格",
+      "size": [
+        610,
+        460
+      ],
+      "annotated_rows": 20,
+      "annotated_columns": 3,
+      "spanning_cells": 7,
+      "projected_row_headers": 0,
+      "sha256": "c35325aa5cb0080b8542fa7d7a3ce271c166557ff5af0fde25fb5d8bcf31534a",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1064111/"
+    },
+    {
+      "file": "05_matrix_PMC1064135_table_1.jpg",
+      "source_file": "PMC1064135_table_1.jpg",
+      "category": "matrix",
+      "description": "多列数值矩阵",
+      "size": [
+        677,
+        374
+      ],
+      "annotated_rows": 16,
+      "annotated_columns": 8,
+      "spanning_cells": 5,
+      "projected_row_headers": 0,
+      "sha256": "26b96c09c5c9a1874f59563e7ff81d87c4b1c71311bfc5fe08977486e83d3265",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1064135/"
+    },
+    {
+      "file": "06_tall_PMC1175991_table_2.jpg",
+      "source_file": "PMC1175991_table_2.jpg",
+      "category": "tall",
+      "description": "纵向长表",
+      "size": [
+        640,
+        746
+      ],
+      "annotated_rows": 41,
+      "annotated_columns": 3,
+      "spanning_cells": 0,
+      "projected_row_headers": 0,
+      "sha256": "27cac48607e99c2f5f49e25d82f825da37252125a03c0308afdae182b37ec817",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1175991/"
+    },
+    {
+      "file": "07_wide_PMC1079800_table_2.jpg",
+      "source_file": "PMC1079800_table_2.jpg",
+      "category": "wide",
+      "description": "宽表与多级表头",
+      "size": [
+        679,
+        235
+      ],
+      "annotated_rows": 10,
+      "annotated_columns": 12,
+      "spanning_cells": 4,
+      "projected_row_headers": 0,
+      "sha256": "f8c8c9b98d4aef73fe97b11439faa8203aa3e4b77f3af4beff2edd489472dca7",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1079800/"
+    },
+    {
+      "file": "08_merged_PMC1274274_table_0.jpg",
+      "source_file": "PMC1274274_table_0.jpg",
+      "category": "merged",
+      "description": "复杂合并表头",
+      "size": [
+        680,
+        248
+      ],
+      "annotated_rows": 11,
+      "annotated_columns": 8,
+      "spanning_cells": 9,
+      "projected_row_headers": 0,
+      "sha256": "c1bd6d3f78e75382824db14f6844f90e2e1c8be454cd0e0987c0ee1e63109b88",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1274274/"
+    },
+    {
+      "file": "09_paragraph_PMC1315350_table_0.jpg",
+      "source_file": "PMC1315350_table_0.jpg",
+      "category": "paragraph",
+      "description": "长段落文字表",
+      "size": [
+        693,
+        709
+      ],
+      "annotated_rows": 4,
+      "annotated_columns": 4,
+      "spanning_cells": 0,
+      "projected_row_headers": 0,
+      "sha256": "9e4acf1d7dc80c02406eb956654a12de5a1dea34917f0e298d9e3ded4e15774e",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1315350/"
+    },
+    {
+      "file": "10_flat_PMC1087860_table_0.jpg",
+      "source_file": "PMC1087860_table_0.jpg",
+      "category": "flat",
+      "description": "扁平多列表",
+      "size": [
+        672,
+        128
+      ],
+      "annotated_rows": 3,
+      "annotated_columns": 11,
+      "spanning_cells": 0,
+      "projected_row_headers": 0,
+      "sha256": "2dee6e6c7352aac2e64210b57cc29eb7e66a424119ef75df1f13080358216f94",
+      "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1087860/"
+    }
+  ]
+}
