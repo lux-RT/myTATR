@@ -1,0 +1,1171 @@
+{
+  "image": "PMC1262774_table_0.jpg",
+  "size": [
+    684,
+    318
+  ],
+  "structure_threshold": 0.5,
+  "objects": [
+    {
+      "label": "table row",
+      "score": 0.997787356376648,
+      "bbox": [
+        37.25849914550781,
+        181.74024963378906,
+        646.3480834960938,
+        231.52096557617188
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9994400143623352,
+      "bbox": [
+        36.64508056640625,
+        123.47647857666016,
+        646.6278686523438,
+        184.00210571289062
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9994900226593018,
+      "bbox": [
+        37.04119873046875,
+        56.999305725097656,
+        646.4407958984375,
+        123.2163314819336
+      ]
+    },
+    {
+      "label": "table column",
+      "score": 0.9999744892120361,
+      "bbox": [
+        37.28668975830078,
+        37.04871368408203,
+        145.83969116210938,
+        279.6558837890625
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9999772310256958,
+      "bbox": [
+        37.291015625,
+        36.8917236328125,
+        646.4027709960938,
+        56.64643096923828
+      ]
+    },
+    {
+      "label": "table column",
+      "score": 0.9999669790267944,
+      "bbox": [
+        319.3077087402344,
+        36.85114288330078,
+        489.46490478515625,
+        279.4595947265625
+      ]
+    },
+    {
+      "label": "table column",
+      "score": 0.9999613761901855,
+      "bbox": [
+        489.7368469238281,
+        36.91857147216797,
+        646.4506225585938,
+        279.5677795410156
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9991827607154846,
+      "bbox": [
+        37.19002914428711,
+        231.43898010253906,
+        646.2289428710938,
+        279.2839050292969
+      ]
+    },
+    {
+      "label": "table column header",
+      "score": 0.9990440011024475,
+      "bbox": [
+        37.32167434692383,
+        36.9179573059082,
+        646.4951171875,
+        56.64729309082031
+      ]
+    },
+    {
+      "label": "table column",
+      "score": 0.9999338388442993,
+      "bbox": [
+        145.6552734375,
+        36.945743560791016,
+        318.7034606933594,
+        279.5910949707031
+      ]
+    },
+    {
+      "label": "table",
+      "score": 0.9999816417694092,
+      "bbox": [
+        37.14909744262695,
+        36.90228271484375,
+        646.332763671875,
+        279.41717529296875
+      ]
+    }
+  ],
+  "tokens": [
+    {
+      "text": "Table 2:Summary ofstabilising the severelyill womenwithcomplicationsof Hypertension after admission toa HighCare Obstetrics",
+      "bbox": [
+        32.0,
+        3.0,
+        660.5,
+        16.5
+      ],
+      "confidence": 0.9630255689465903,
+      "block_num": 0,
+      "line_num": 0,
+      "span_num": 0
+    },
+    {
+      "text": "unit",
+      "bbox": [
+        32.5,
+        16.5,
+        54.0,
+        27.5
+      ],
+      "confidence": 0.9918947517871857,
+      "block_num": 0,
+      "line_num": 1,
+      "span_num": 0
+    },
+    {
+      "text": "Organ system",
+      "bbox": [
+        36.5,
+        38.0,
+        98.5,
+        52.5
+      ],
+      "confidence": 0.9808008223772049,
+      "block_num": 0,
+      "line_num": 2,
+      "span_num": 0
+    },
+    {
+      "text": "Acute management",
+      "bbox": [
+        155.0,
+        39.5,
+        237.5,
+        51.0
+      ],
+      "confidence": 0.9661136195063591,
+      "block_num": 0,
+      "line_num": 3,
+      "span_num": 0
+    },
+    {
+      "text": "Maintenance",
+      "bbox": [
+        324.5,
+        38.0,
+        380.5,
+        51.5
+      ],
+      "confidence": 0.9897655031897805,
+      "block_num": 0,
+      "line_num": 4,
+      "span_num": 0
+    },
+    {
+      "text": "Managementof complications",
+      "bbox": [
+        496.5,
+        38.0,
+        623.5,
+        51.5
+      ],
+      "confidence": 0.9687497547039619,
+      "block_num": 0,
+      "line_num": 5,
+      "span_num": 0
+    },
+    {
+      "text": "Fluid management",
+      "bbox": [
+        37.0,
+        65.5,
+        116.0,
+        80.0
+      ],
+      "confidence": 0.9778373092412949,
+      "block_num": 0,
+      "line_num": 6,
+      "span_num": 0
+    },
+    {
+      "text": "Start IVlinegive300ml fluidbolus:",
+      "bbox": [
+        154.5,
+        66.0,
+        304.5,
+        78.5
+      ],
+      "confidence": 0.9320744845000181,
+      "block_num": 0,
+      "line_num": 7,
+      "span_num": 0
+    },
+    {
+      "text": "GiveRingers lactate 125ml/hr iv.",
+      "bbox": [
+        326.5,
+        67.0,
+        466.5,
+        78.5
+      ],
+      "confidence": 0.9184496812522411,
+      "block_num": 0,
+      "line_num": 8,
+      "span_num": 0
+    },
+    {
+      "text": "Ifpoor output repeat fluid bolus.lf",
+      "bbox": [
+        496.5,
+        66.0,
+        645.5,
+        79.5
+      ],
+      "confidence": 0.9374820079122271,
+      "block_num": 0,
+      "line_num": 9,
+      "span_num": 0
+    },
+    {
+      "text": "100ml Ringers lactate",
+      "bbox": [
+        155.5,
+        78.0,
+        251.0,
+        91.0
+      ],
+      "confidence": 0.9070902977670942,
+      "block_num": 0,
+      "line_num": 10,
+      "span_num": 0
+    },
+    {
+      "text": "Start a fluid balance chart",
+      "bbox": [
+        325.0,
+        78.0,
+        435.5,
+        90.5
+      ],
+      "confidence": 0.9022727696983902,
+      "block_num": 0,
+      "line_num": 11,
+      "span_num": 0
+    },
+    {
+      "text": "suill poor output and positive fluid",
+      "bbox": [
+        496.5,
+        78.5,
+        641.5,
+        90.5
+      ],
+      "confidence": 0.9346669084495969,
+      "block_num": 0,
+      "line_num": 12,
+      "span_num": 0
+    },
+    {
+      "text": "200mlnormal saline with loading",
+      "bbox": [
+        154.0,
+        88.5,
+        299.5,
+        103.5
+      ],
+      "confidence": 0.93459802673709,
+      "block_num": 0,
+      "line_num": 13,
+      "span_num": 0
+    },
+    {
+      "text": "balancestartlow-dosedopamine",
+      "bbox": [
+        496.5,
+        90.0,
+        637.5,
+        102.5
+      ],
+      "confidence": 0.9868581422737667,
+      "block_num": 0,
+      "line_num": 14,
+      "span_num": 0
+    },
+    {
+      "text": "dose of magnesium sulphate Urinary",
+      "bbox": [
+        154.0,
+        100.5,
+        309.5,
+        115.0
+      ],
+      "confidence": 0.9507831440252417,
+      "block_num": 0,
+      "line_num": 15,
+      "span_num": 0
+    },
+    {
+      "text": "infusion",
+      "bbox": [
+        496.5,
+        102.0,
+        532.0,
+        113.5
+      ],
+      "confidence": 0.9909819588065147,
+      "block_num": 0,
+      "line_num": 16,
+      "span_num": 0
+    },
+    {
+      "text": "Catheter",
+      "bbox": [
+        155.0,
+        113.5,
+        194.5,
+        125.5
+      ],
+      "confidence": 0.98663529753685,
+      "block_num": 0,
+      "line_num": 17,
+      "span_num": 0
+    },
+    {
+      "text": "Magnesium Sulphate",
+      "bbox": [
+        37.0,
+        125.5,
+        125.0,
+        139.5
+      ],
+      "confidence": 0.9749893777900271,
+      "block_num": 0,
+      "line_num": 18,
+      "span_num": 0
+    },
+    {
+      "text": "4gmagnesium sulphate in200ml",
+      "bbox": [
+        153.5,
+        125.5,
+        299.0,
+        139.0
+      ],
+      "confidence": 0.959760423217501,
+      "block_num": 0,
+      "line_num": 19,
+      "span_num": 0
+    },
+    {
+      "text": "Maintenance:5g four hourly iv",
+      "bbox": [
+        325.5,
+        126.5,
+        457.5,
+        138.5
+      ],
+      "confidence": 0.9440791154729908,
+      "block_num": 0,
+      "line_num": 20,
+      "span_num": 0
+    },
+    {
+      "text": "In case ofmagnesium sulphate",
+      "bbox": [
+        497.0,
+        127.0,
+        625.0,
+        138.5
+      ],
+      "confidence": 0.9385625017540795,
+      "block_num": 0,
+      "line_num": 21,
+      "span_num": 0
+    },
+    {
+      "text": "saline over20miniv",
+      "bbox": [
+        155.0,
+        138.5,
+        243.5,
+        149.5
+      ],
+      "confidence": 0.9560871024926504,
+      "block_num": 0,
+      "line_num": 22,
+      "span_num": 0
+    },
+    {
+      "text": "Checkbefore next dosage:Urine",
+      "bbox": [
+        326.0,
+        138.5,
+        467.0,
+        150.0
+      ],
+      "confidence": 0.9792070635433855,
+      "block_num": 0,
+      "line_num": 23,
+      "span_num": 0
+    },
+    {
+      "text": "overdosegivecalciumgluconate",
+      "bbox": [
+        497.5,
+        139.0,
+        633.5,
+        150.5
+      ],
+      "confidence": 0.9887003345148904,
+      "block_num": 0,
+      "line_num": 24,
+      "span_num": 0
+    },
+    {
+      "text": "5gmagnesium sulphate with1 ml",
+      "bbox": [
+        154.0,
+        149.0,
+        299.0,
+        163.0
+      ],
+      "confidence": 0.9108856094294581,
+      "block_num": 0,
+      "line_num": 25,
+      "span_num": 0
+    },
+    {
+      "text": "output>30ml/hr",
+      "bbox": [
+        325.5,
+        149.0,
+        403.5,
+        161.5
+      ],
+      "confidence": 0.9433111292975289,
+      "block_num": 0,
+      "line_num": 26,
+      "span_num": 0
+    },
+    {
+      "text": "lignocaine im ineach buttock",
+      "bbox": [
+        154.5,
+        161.5,
+        279.0,
+        173.5
+      ],
+      "confidence": 0.9427325193371091,
+      "block_num": 0,
+      "line_num": 27,
+      "span_num": 0
+    },
+    {
+      "text": "Tendonreflexes present",
+      "bbox": [
+        325.0,
+        161.0,
+        432.0,
+        173.5
+      ],
+      "confidence": 0.9755818464539268,
+      "block_num": 0,
+      "line_num": 28,
+      "span_num": 0
+    },
+    {
+      "text": "Respiratoryratemore thanI6/min",
+      "bbox": [
+        325.0,
+        172.5,
+        475.5,
+        186.0
+      ],
+      "confidence": 0.9605369210243225,
+      "block_num": 0,
+      "line_num": 29,
+      "span_num": 0
+    },
+    {
+      "text": "Bloodpressurecontrol",
+      "bbox": [
+        38.5,
+        186.0,
+        137.5,
+        198.0
+      ],
+      "confidence": 0.9922712028026581,
+      "block_num": 0,
+      "line_num": 30,
+      "span_num": 0
+    },
+    {
+      "text": "Repeatbloodpressureafter20min",
+      "bbox": [
+        154.5,
+        186.0,
+        306.5,
+        198.0
+      ],
+      "confidence": 0.9893917996307899,
+      "block_num": 0,
+      "line_num": 31,
+      "span_num": 0
+    },
+    {
+      "text": "Use eithernifedipine or labetolol",
+      "bbox": [
+        326.0,
+        186.0,
+        466.0,
+        197.5
+      ],
+      "confidence": 0.9587727098753958,
+      "block_num": 0,
+      "line_num": 32,
+      "span_num": 0
+    },
+    {
+      "text": "andifdiastolic≥10orsystolic≥160",
+      "bbox": [
+        154.5,
+        198.5,
+        314.5,
+        209.5
+      ],
+      "confidence": 0.9536317990672204,
+      "block_num": 0,
+      "line_num": 33,
+      "span_num": 0
+    },
+    {
+      "text": "treataccordingto the",
+      "bbox": [
+        155.0,
+        210.5,
+        249.5,
+        221.5
+      ],
+      "confidence": 0.9770549744367599,
+      "block_num": 0,
+      "line_num": 34,
+      "span_num": 0
+    },
+    {
+      "text": "antihypertensive drugprotocol",
+      "bbox": [
+        154.5,
+        220.5,
+        286.5,
+        234.0
+      ],
+      "confidence": 0.9856078624725342,
+      "block_num": 0,
+      "line_num": 35,
+      "span_num": 0
+    },
+    {
+      "text": "Neurological status",
+      "bbox": [
+        38.0,
+        234.0,
+        121.0,
+        246.0
+      ],
+      "confidence": 0.9603671149203652,
+      "block_num": 0,
+      "line_num": 36,
+      "span_num": 0
+    },
+    {
+      "text": "Ifstillconfusedchecksaturationand",
+      "bbox": [
+        154.0,
+        234.0,
+        309.5,
+        245.5
+      ],
+      "confidence": 0.9705032182462288,
+      "block_num": 0,
+      "line_num": 37,
+      "span_num": 0
+    },
+    {
+      "text": "Abnormal saturation:Give oxygen viaIf both arenormal:give haloperidol",
+      "bbox": [
+        325.5,
+        233.5,
+        647.0,
+        246.5
+      ],
+      "confidence": 0.9404727531516034,
+      "block_num": 0,
+      "line_num": 38,
+      "span_num": 0
+    },
+    {
+      "text": "bloodpressure",
+      "bbox": [
+        154.5,
+        246.0,
+        220.0,
+        257.5
+      ],
+      "confidence": 0.9879793891539941,
+      "block_num": 0,
+      "line_num": 39,
+      "span_num": 0
+    },
+    {
+      "text": "mask",
+      "bbox": [
+        325.5,
+        246.5,
+        349.5,
+        257.5
+      ],
+      "confidence": 0.9903115481138229,
+      "block_num": 0,
+      "line_num": 40,
+      "span_num": 0
+    },
+    {
+      "text": "Abnormaibloodpressuretreatwith",
+      "bbox": [
+        325.5,
+        257.0,
+        483.0,
+        269.0
+      ],
+      "confidence": 0.9622268040974935,
+      "block_num": 0,
+      "line_num": 41,
+      "span_num": 0
+    },
+    {
+      "text": "appropriate drugs",
+      "bbox": [
+        325.0,
+        268.5,
+        403.0,
+        282.5
+      ],
+      "confidence": 0.9747011416098651,
+      "block_num": 0,
+      "line_num": 42,
+      "span_num": 0
+    }
+  ],
+  "table": {
+    "rows": 5,
+    "columns": 4,
+    "bbox": [
+      37.28668975830078,
+      36.8917236328125,
+      646.4506225585938,
+      279.2839050292969
+    ],
+    "cells": [
+      {
+        "bbox": [
+          37.28668975830078,
+          36.8917236328125,
+          145.83969116210938,
+          56.64643096923828
+        ],
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Organ system",
+        "column header": true,
+        "projected row header": false,
+        "token_indices": [
+          2
+        ],
+        "ocr_confidence": 0.9808008223772049
+      },
+      {
+        "bbox": [
+          145.6552734375,
+          36.8917236328125,
+          318.7034606933594,
+          56.64643096923828
+        ],
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "Acute management",
+        "column header": true,
+        "projected row header": false,
+        "token_indices": [
+          3
+        ],
+        "ocr_confidence": 0.9661136195063591
+      },
+      {
+        "bbox": [
+          319.3077087402344,
+          36.8917236328125,
+          489.46490478515625,
+          56.64643096923828
+        ],
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "Maintenance",
+        "column header": true,
+        "projected row header": false,
+        "token_indices": [
+          4
+        ],
+        "ocr_confidence": 0.9897655031897805
+      },
+      {
+        "bbox": [
+          489.7368469238281,
+          36.8917236328125,
+          646.4506225585938,
+          56.64643096923828
+        ],
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "Managementof complications",
+        "column header": true,
+        "projected row header": false,
+        "token_indices": [
+          5
+        ],
+        "ocr_confidence": 0.9687497547039619
+      },
+      {
+        "bbox": [
+          37.28668975830078,
+          56.999305725097656,
+          145.83969116210938,
+          123.2163314819336
+        ],
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Fluid management",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          6
+        ],
+        "ocr_confidence": 0.9778373092412949
+      },
+      {
+        "bbox": [
+          145.6552734375,
+          56.999305725097656,
+          318.7034606933594,
+          123.2163314819336
+        ],
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "Start IVlinegive300ml fluidbolus:\n100ml Ringers lactate\n200mlnormal saline with loading\ndose of magnesium sulphate Urinary\nCatheter",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          7,
+          10,
+          13,
+          15,
+          17
+        ],
+        "ocr_confidence": 0.9422362501132587
+      },
+      {
+        "bbox": [
+          319.3077087402344,
+          56.999305725097656,
+          489.46490478515625,
+          123.2163314819336
+        ],
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "GiveRingers lactate 125ml/hr iv.\nStart a fluid balance chart",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          8,
+          11
+        ],
+        "ocr_confidence": 0.9103612254753157
+      },
+      {
+        "bbox": [
+          489.7368469238281,
+          56.999305725097656,
+          646.4506225585938,
+          123.2163314819336
+        ],
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "Ifpoor output repeat fluid bolus.lf\nsuill poor output and positive fluid\nbalancestartlow-dosedopamine\ninfusion",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          9,
+          12,
+          14,
+          16
+        ],
+        "ocr_confidence": 0.9624972543605264
+      },
+      {
+        "bbox": [
+          37.28668975830078,
+          123.47647857666016,
+          145.83969116210938,
+          184.00210571289062
+        ],
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Magnesium Sulphate",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          18
+        ],
+        "ocr_confidence": 0.9749893777900271
+      },
+      {
+        "bbox": [
+          145.6552734375,
+          123.47647857666016,
+          318.7034606933594,
+          184.00210571289062
+        ],
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "4gmagnesium sulphate in200ml\nsaline over20miniv\n5gmagnesium sulphate with1 ml\nlignocaine im ineach buttock",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          19,
+          22,
+          25,
+          27
+        ],
+        "ocr_confidence": 0.9423664136191796
+      },
+      {
+        "bbox": [
+          319.3077087402344,
+          123.47647857666016,
+          489.46490478515625,
+          184.00210571289062
+        ],
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "Maintenance:5g four hourly iv\nCheckbefore next dosage:Urine\noutput>30ml/hr\nTendonreflexes present\nRespiratoryratemore thanI6/min",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          20,
+          23,
+          26,
+          28,
+          29
+        ],
+        "ocr_confidence": 0.960543215158431
+      },
+      {
+        "bbox": [
+          489.7368469238281,
+          123.47647857666016,
+          646.4506225585938,
+          184.00210571289062
+        ],
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "In case ofmagnesium sulphate\noverdosegivecalciumgluconate",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          21,
+          24
+        ],
+        "ocr_confidence": 0.9636314181344849
+      },
+      {
+        "bbox": [
+          37.28668975830078,
+          181.74024963378906,
+          145.83969116210938,
+          231.52096557617188
+        ],
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Bloodpressurecontrol",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          30
+        ],
+        "ocr_confidence": 0.9922712028026581
+      },
+      {
+        "bbox": [
+          145.6552734375,
+          181.74024963378906,
+          318.7034606933594,
+          231.52096557617188
+        ],
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "Repeatbloodpressureafter20min\nandifdiastolic≥10orsystolic≥160\ntreataccordingto the\nantihypertensive drugprotocol",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          31,
+          33,
+          34,
+          35
+        ],
+        "ocr_confidence": 0.976421608901826
+      },
+      {
+        "bbox": [
+          319.3077087402344,
+          181.74024963378906,
+          489.46490478515625,
+          231.52096557617188
+        ],
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "Use eithernifedipine or labetolol",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          32
+        ],
+        "ocr_confidence": 0.9587727098753958
+      },
+      {
+        "bbox": [
+          489.7368469238281,
+          181.74024963378906,
+          646.4506225585938,
+          231.52096557617188
+        ],
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          37.28668975830078,
+          231.43898010253906,
+          145.83969116210938,
+          279.2839050292969
+        ],
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Neurological status",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          36
+        ],
+        "ocr_confidence": 0.9603671149203652
+      },
+      {
+        "bbox": [
+          145.6552734375,
+          231.43898010253906,
+          318.7034606933594,
+          279.2839050292969
+        ],
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "Ifstillconfusedchecksaturationand\nbloodpressure",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          37,
+          39
+        ],
+        "ocr_confidence": 0.9792413037001114
+      },
+      {
+        "bbox": [
+          319.3077087402344,
+          231.43898010253906,
+          489.46490478515625,
+          279.2839050292969
+        ],
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "Abnormal saturation:Give oxygen viaIf both arenormal:give haloperidol\nmask\nAbnormaibloodpressuretreatwith\nappropriate drugs",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          38,
+          40,
+          41,
+          42
+        ],
+        "ocr_confidence": 0.9669280617431962
+      },
+      {
+        "bbox": [
+          489.7368469238281,
+          231.43898010253906,
+          646.4506225585938,
+          279.2839050292969
+        ],
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      }
+    ],
+    "assigned_tokens": 41,
+    "unassigned_tokens": [
+      {
+        "text": "Table 2:Summary ofstabilising the severelyill womenwithcomplicationsof Hypertension after admission toa HighCare Obstetrics",
+        "bbox": [
+          32.0,
+          3.0,
+          660.5,
+          16.5
+        ],
+        "confidence": 0.9630255689465903,
+        "block_num": 0,
+        "line_num": 0,
+        "span_num": 0
+      },
+      {
+        "text": "unit",
+        "bbox": [
+          32.5,
+          16.5,
+          54.0,
+          27.5
+        ],
+        "confidence": 0.9918947517871857,
+        "block_num": 0,
+        "line_num": 1,
+        "span_num": 0
+      }
+    ],
+    "ambiguous_token_indices": [
+      29,
+      38
+    ],
+    "mean_token_cell_overlap": 0.9241575164831441
+  },
+  "seconds": {
+    "ocr": 5.2289,
+    "tatr": 0.7881,
+    "fusion": 0.0318
+  }
+}

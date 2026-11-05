@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve original CSV line endings and exact third-party hashes on Windows.
+*.csv -text -whitespace
+third_party/tatr/postprocess.py -text -whitespace
+third_party/tatr/LICENSE -text

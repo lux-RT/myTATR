@@ -1,0 +1,78 @@
+{
+  "device": "cpu",
+  "tatr": "microsoft/table-transformer-structure-recognition",
+  "torch": "2.8.0+cpu",
+  "transformers": "4.57.1",
+  "ocr_engine": "RapidOCR-ONNXRuntime",
+  "ocr_version": "1.4.4",
+  "onnxruntime_version": "1.23.2",
+  "ocr_scale": 2.0,
+  "model_load_seconds": 0.1864,
+  "images": [
+    {
+      "image": "PMC1262774_table_0.jpg",
+      "rows": 5,
+      "columns": 4,
+      "cells": 20,
+      "populated_cells": 18,
+      "ocr_tokens": 43,
+      "assigned_tokens": 41,
+      "unassigned_tokens": 2,
+      "ambiguous_tokens": 2,
+      "seconds": {
+        "ocr": 5.2289,
+        "tatr": 0.7881,
+        "fusion": 0.0318
+      }
+    },
+    {
+      "image": "PMC1064078_table_0.jpg",
+      "rows": 9,
+      "columns": 6,
+      "cells": 50,
+      "populated_cells": 48,
+      "ocr_tokens": 49,
+      "assigned_tokens": 48,
+      "unassigned_tokens": 1,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 3.133,
+        "tatr": 0.3925,
+        "fusion": 0.0852
+      }
+    },
+    {
+      "image": "PMC1064082_table_1.jpg",
+      "rows": 24,
+      "columns": 4,
+      "cells": 74,
+      "populated_cells": 65,
+      "ocr_tokens": 67,
+      "assigned_tokens": 65,
+      "unassigned_tokens": 2,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 3.2682,
+        "tatr": 0.8177,
+        "fusion": 0.211
+      }
+    },
+    {
+      "image": "PMC1064879_table_0.jpg",
+      "rows": 33,
+      "columns": 5,
+      "cells": 165,
+      "populated_cells": 165,
+      "ocr_tokens": 168,
+      "assigned_tokens": 165,
+      "unassigned_tokens": 3,
+      "ambiguous_tokens": 0,
+      "seconds": {
+        "ocr": 6.8484,
+        "tatr": 0.6069,
+        "fusion": 0.729
+      }
+    }
+  ],
+  "limitations": "Cropped-table smoke test; token assignment rate is NOT OCR accuracy or GriTS."
+}

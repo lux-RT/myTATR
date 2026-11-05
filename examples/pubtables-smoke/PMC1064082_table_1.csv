@@ -1,0 +1,24 @@
+﻿LPA2expression,Low(36),High (48),P
+Age (years),,,
+<50,20(56%),16(339),0.042
+250,16(44%),32(67%),
+Tumour size,,,
+T1(≤2.0 cm),16(44%),17(35%),NS
+T2(>2.0cmto≤5.0cm),18(50%),25(52%),
+T3 (>5.0cm）,2(6%),6(13%),
+Nuclear grade,,,
+1,5(14%),5(10%),NS
+I,24(67%),31(65%),
+,7(19%),12(25%）,
+Menopausal status,,,
+Premenopausal,21(58%),17 (35%),0.037
+Postmenopausal,15(42%),31(65%),
+Oestrogen receptor status,,,
+Negative,10(55%),27(56%),NS
+Positive,8(45%),21 (44%),
+Nodal metastasis,,,
+Negative,12(33%),21(44%),NS
+Positive,24(67%),27 (56%),
+Distant metastasis,,,
+Negative,27(754),41(85%),NS
+Positive,9(25%),7(159),

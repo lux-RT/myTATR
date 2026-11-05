@@ -1,0 +1,2869 @@
+{
+  "image": "PMC1064082_table_1.jpg",
+  "size": [
+    574,
+    538
+  ],
+  "structure_threshold": 0.5,
+  "objects": [
+    {
+      "label": "table row",
+      "score": 0.9998897314071655,
+      "bbox": [
+        36.80241394042969,
+        366.7782287597656,
+        534.7693481445312,
+        386.3878173828125
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.999945878982544,
+      "bbox": [
+        36.85905456542969,
+        464.944091796875,
+        534.87744140625,
+        484.58599853515625
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998718500137329,
+      "bbox": [
+        36.73379898071289,
+        92.77500915527344,
+        534.9639282226562,
+        112.30590057373047
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998087286949158,
+      "bbox": [
+        36.80253219604492,
+        327.3309631347656,
+        534.8028564453125,
+        346.9558410644531
+      ]
+    },
+    {
+      "label": "table projected row header",
+      "score": 0.9962319731712341,
+      "bbox": [
+        36.730377197265625,
+        329.84442138671875,
+        535.0574340820312,
+        349.1504211425781
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9999051094055176,
+      "bbox": [
+        36.812522888183594,
+        347.0658264160156,
+        534.821533203125,
+        366.7003173828125
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998779296875,
+      "bbox": [
+        36.89396667480469,
+        73.13629150390625,
+        534.91064453125,
+        92.68124389648438
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9997627139091492,
+      "bbox": [
+        36.93230438232422,
+        53.14457702636719,
+        534.9953002929688,
+        72.95008850097656
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9992679953575134,
+      "bbox": [
+        36.5283317565918,
+        229.8976593017578,
+        535.0716552734375,
+        249.6350860595703
+      ]
+    },
+    {
+      "label": "table column",
+      "score": 0.9999542236328125,
+      "bbox": [
+        36.730472564697266,
+        36.74005126953125,
+        173.7858123779297,
+        500.3308410644531
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9999675750732422,
+      "bbox": [
+        36.68851852416992,
+        151.7307891845703,
+        534.95068359375,
+        171.34307861328125
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998157620429993,
+      "bbox": [
+        36.816322326660156,
+        386.47991943359375,
+        534.8397216796875,
+        405.9628601074219
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998902082443237,
+      "bbox": [
+        36.82017135620117,
+        171.5330047607422,
+        535.150634765625,
+        191.02261352539062
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9994547963142395,
+      "bbox": [
+        36.76145935058594,
+        112.58094024658203,
+        535.059326171875,
+        131.96641540527344
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998403787612915,
+      "bbox": [
+        36.84931945800781,
+        445.3230895996094,
+        534.9148559570312,
+        464.8783874511719
+      ]
+    },
+    {
+      "label": "table spanning cell",
+      "score": 0.5051021575927734,
+      "bbox": [
+        453.12677001953125,
+        463.9944152832031,
+        534.8035888671875,
+        500.6004638671875
+      ]
+    },
+    {
+      "label": "table projected row header",
+      "score": 0.9981912970542908,
+      "bbox": [
+        36.577239990234375,
+        445.1717834472656,
+        535.0678100585938,
+        464.80670166015625
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9997736811637878,
+      "bbox": [
+        36.844905853271484,
+        190.94186401367188,
+        535.0906372070312,
+        210.52978515625
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9999078512191772,
+      "bbox": [
+        36.7663688659668,
+        132.01284790039062,
+        535.0200805664062,
+        151.64755249023438
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998878240585327,
+      "bbox": [
+        36.86824035644531,
+        288.7007751464844,
+        534.9187622070312,
+        308.32666015625
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9997676014900208,
+      "bbox": [
+        36.92563247680664,
+        36.46381378173828,
+        534.961669921875,
+        52.910667419433594
+      ]
+    },
+    {
+      "label": "table column",
+      "score": 0.9999551773071289,
+      "bbox": [
+        293.3528747558594,
+        36.63908386230469,
+        449.9448547363281,
+        500.3735046386719
+      ]
+    },
+    {
+      "label": "table column",
+      "score": 0.9998446702957153,
+      "bbox": [
+        451.9290771484375,
+        36.6048698425293,
+        535.0513916015625,
+        500.4207763671875
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998319149017334,
+      "bbox": [
+        36.85238265991211,
+        484.67803955078125,
+        534.97119140625,
+        500.267578125
+      ]
+    },
+    {
+      "label": "table column header",
+      "score": 0.9984416365623474,
+      "bbox": [
+        36.866424560546875,
+        36.43489074707031,
+        535.1921997070312,
+        52.80958938598633
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.999866247177124,
+      "bbox": [
+        36.81902313232422,
+        307.6807861328125,
+        534.8814086914062,
+        327.32989501953125
+      ]
+    },
+    {
+      "label": "table column",
+      "score": 0.9999415874481201,
+      "bbox": [
+        172.8664093017578,
+        36.815792083740234,
+        292.8709411621094,
+        500.5260925292969
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998993873596191,
+      "bbox": [
+        36.836490631103516,
+        425.5656433105469,
+        534.8119506835938,
+        445.2693786621094
+      ]
+    },
+    {
+      "label": "table projected row header",
+      "score": 0.9892415404319763,
+      "bbox": [
+        36.82141876220703,
+        53.13542938232422,
+        535.0474243164062,
+        72.7686538696289
+      ]
+    },
+    {
+      "label": "table projected row header",
+      "score": 0.9946877956390381,
+      "bbox": [
+        36.696128845214844,
+        112.3857650756836,
+        534.94384765625,
+        132.1405029296875
+      ]
+    },
+    {
+      "label": "table projected row header",
+      "score": 0.993505597114563,
+      "bbox": [
+        36.7320556640625,
+        269.4423828125,
+        535.2649536132812,
+        289.1873474121094
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9999179840087891,
+      "bbox": [
+        36.657779693603516,
+        268.88153076171875,
+        535.133544921875,
+        288.47967529296875
+      ]
+    },
+    {
+      "label": "table projected row header",
+      "score": 0.9906973838806152,
+      "bbox": [
+        36.72074890136719,
+        190.42535400390625,
+        535.262451171875,
+        209.93260192871094
+      ]
+    },
+    {
+      "label": "table projected row header",
+      "score": 0.9979419112205505,
+      "bbox": [
+        36.4783821105957,
+        386.55126953125,
+        534.7971801757812,
+        405.9393005371094
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9999221563339233,
+      "bbox": [
+        36.84073257446289,
+        210.34014892578125,
+        534.9369506835938,
+        229.88319396972656
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998703002929688,
+      "bbox": [
+        36.799949645996094,
+        406.043212890625,
+        534.88525390625,
+        425.58355712890625
+      ]
+    },
+    {
+      "label": "table",
+      "score": 0.9999943971633911,
+      "bbox": [
+        36.778995513916016,
+        36.538169860839844,
+        534.9957885742188,
+        500.2118835449219
+      ]
+    },
+    {
+      "label": "table row",
+      "score": 0.9998413324356079,
+      "bbox": [
+        36.65937042236328,
+        249.42811584472656,
+        535.1104125976562,
+        269.0250244140625
+      ]
+    }
+  ],
+  "tokens": [
+    {
+      "text": "Therelationshipbetweenlysophosphatidicacidreceptor2(LPA2)expressionandclinical/pathologicalfactor",
+      "bbox": [
+        32.0,
+        14.0,
+        559.5,
+        26.5
+      ],
+      "confidence": 0.9872121067391229,
+      "block_num": 0,
+      "line_num": 0,
+      "span_num": 0
+    },
+    {
+      "text": "LPA2expression",
+      "bbox": [
+        35.0,
+        37.5,
+        112.0,
+        51.0
+      ],
+      "confidence": 0.9833872403417315,
+      "block_num": 0,
+      "line_num": 1,
+      "span_num": 0
+    },
+    {
+      "text": "Low(36)",
+      "bbox": [
+        193.0,
+        36.5,
+        235.5,
+        50.5
+      ],
+      "confidence": 0.9386218190193176,
+      "block_num": 0,
+      "line_num": 2,
+      "span_num": 0
+    },
+    {
+      "text": "High (48)",
+      "bbox": [
+        351.0,
+        36.5,
+        395.5,
+        52.0
+      ],
+      "confidence": 0.9244676166110568,
+      "block_num": 0,
+      "line_num": 3,
+      "span_num": 0
+    },
+    {
+      "text": "P",
+      "bbox": [
+        509.0,
+        37.0,
+        519.5,
+        49.5
+      ],
+      "confidence": 0.9400408864021301,
+      "block_num": 0,
+      "line_num": 4,
+      "span_num": 0
+    },
+    {
+      "text": "Age (years)",
+      "bbox": [
+        36.0,
+        57.0,
+        88.5,
+        72.0
+      ],
+      "confidence": 0.9579990939660505,
+      "block_num": 0,
+      "line_num": 5,
+      "span_num": 0
+    },
+    {
+      "text": "<50",
+      "bbox": [
+        48.5,
+        77.0,
+        71.0,
+        90.5
+      ],
+      "confidence": 0.9298448363939921,
+      "block_num": 0,
+      "line_num": 6,
+      "span_num": 0
+    },
+    {
+      "text": "20(56%)",
+      "bbox": [
+        193.5,
+        77.0,
+        238.5,
+        90.5
+      ],
+      "confidence": 0.941021374293736,
+      "block_num": 0,
+      "line_num": 7,
+      "span_num": 0
+    },
+    {
+      "text": "16(339)",
+      "bbox": [
+        351.5,
+        76.0,
+        395.0,
+        90.0
+      ],
+      "confidence": 0.9034923911094666,
+      "block_num": 0,
+      "line_num": 8,
+      "span_num": 0
+    },
+    {
+      "text": "0.042",
+      "bbox": [
+        508.0,
+        77.5,
+        538.0,
+        90.0
+      ],
+      "confidence": 0.9938553810119629,
+      "block_num": 0,
+      "line_num": 9,
+      "span_num": 0
+    },
+    {
+      "text": "250",
+      "bbox": [
+        48.5,
+        97.5,
+        70.0,
+        111.0
+      ],
+      "confidence": 0.8299993375937144,
+      "block_num": 0,
+      "line_num": 10,
+      "span_num": 0
+    },
+    {
+      "text": "16(44%)",
+      "bbox": [
+        194.0,
+        97.0,
+        238.5,
+        110.5
+      ],
+      "confidence": 0.9270668455532619,
+      "block_num": 0,
+      "line_num": 11,
+      "span_num": 0
+    },
+    {
+      "text": "32(67%)",
+      "bbox": [
+        351.0,
+        97.0,
+        395.5,
+        110.5
+      ],
+      "confidence": 0.8968758668218341,
+      "block_num": 0,
+      "line_num": 12,
+      "span_num": 0
+    },
+    {
+      "text": "Tumour size",
+      "bbox": [
+        35.0,
+        115.5,
+        91.5,
+        130.0
+      ],
+      "confidence": 0.9626260454004462,
+      "block_num": 0,
+      "line_num": 13,
+      "span_num": 0
+    },
+    {
+      "text": "T1(≤2.0 cm)",
+      "bbox": [
+        48.0,
+        135.0,
+        107.0,
+        150.0
+      ],
+      "confidence": 0.8570147969506003,
+      "block_num": 0,
+      "line_num": 14,
+      "span_num": 0
+    },
+    {
+      "text": "16(44%)",
+      "bbox": [
+        194.0,
+        136.0,
+        238.5,
+        149.5
+      ],
+      "confidence": 0.9043149777821132,
+      "block_num": 0,
+      "line_num": 15,
+      "span_num": 0
+    },
+    {
+      "text": "17(35%)",
+      "bbox": [
+        352.0,
+        136.0,
+        395.5,
+        149.5
+      ],
+      "confidence": 0.9242218562534877,
+      "block_num": 0,
+      "line_num": 16,
+      "span_num": 0
+    },
+    {
+      "text": "NS",
+      "bbox": [
+        508.0,
+        135.5,
+        526.0,
+        149.5
+      ],
+      "confidence": 0.9939527809619904,
+      "block_num": 0,
+      "line_num": 17,
+      "span_num": 0
+    },
+    {
+      "text": "T2(>2.0cmto≤5.0cm)",
+      "bbox": [
+        49.0,
+        156.0,
+        157.5,
+        168.5
+      ],
+      "confidence": 0.9022975315650305,
+      "block_num": 0,
+      "line_num": 18,
+      "span_num": 0
+    },
+    {
+      "text": "18(50%)",
+      "bbox": [
+        194.0,
+        156.0,
+        238.5,
+        169.0
+      ],
+      "confidence": 0.9432622194290161,
+      "block_num": 0,
+      "line_num": 19,
+      "span_num": 0
+    },
+    {
+      "text": "25(52%)",
+      "bbox": [
+        351.5,
+        155.5,
+        395.5,
+        169.0
+      ],
+      "confidence": 0.9494032093456813,
+      "block_num": 0,
+      "line_num": 20,
+      "span_num": 0
+    },
+    {
+      "text": "T3 (>5.0cm）",
+      "bbox": [
+        47.5,
+        174.0,
+        108.0,
+        189.0
+      ],
+      "confidence": 0.8820957487279718,
+      "block_num": 0,
+      "line_num": 21,
+      "span_num": 0
+    },
+    {
+      "text": "2(6%)",
+      "bbox": [
+        193.0,
+        174.5,
+        226.5,
+        188.5
+      ],
+      "confidence": 0.8919897079467773,
+      "block_num": 0,
+      "line_num": 22,
+      "span_num": 0
+    },
+    {
+      "text": "6(13%)",
+      "bbox": [
+        351.0,
+        174.5,
+        389.5,
+        188.5
+      ],
+      "confidence": 0.8240673740704855,
+      "block_num": 0,
+      "line_num": 23,
+      "span_num": 0
+    },
+    {
+      "text": "Nuclear grade",
+      "bbox": [
+        36.5,
+        195.0,
+        99.5,
+        208.0
+      ],
+      "confidence": 0.9661277899375329,
+      "block_num": 0,
+      "line_num": 24,
+      "span_num": 0
+    },
+    {
+      "text": "1",
+      "bbox": [
+        47.0,
+        215.0,
+        57.0,
+        227.0
+      ],
+      "confidence": 0.5377753973007202,
+      "block_num": 0,
+      "line_num": 25,
+      "span_num": 0
+    },
+    {
+      "text": "5(14%)",
+      "bbox": [
+        193.0,
+        214.0,
+        232.5,
+        228.0
+      ],
+      "confidence": 0.9150203367074331,
+      "block_num": 0,
+      "line_num": 26,
+      "span_num": 0
+    },
+    {
+      "text": "5(10%)",
+      "bbox": [
+        350.5,
+        213.0,
+        390.0,
+        228.5
+      ],
+      "confidence": 0.9277086754639944,
+      "block_num": 0,
+      "line_num": 27,
+      "span_num": 0
+    },
+    {
+      "text": "NS",
+      "bbox": [
+        508.5,
+        215.0,
+        525.0,
+        227.5
+      ],
+      "confidence": 0.9926967620849609,
+      "block_num": 0,
+      "line_num": 28,
+      "span_num": 0
+    },
+    {
+      "text": "I",
+      "bbox": [
+        49.0,
+        235.0,
+        57.0,
+        246.5
+      ],
+      "confidence": 0.5254700183868408,
+      "block_num": 0,
+      "line_num": 29,
+      "span_num": 0
+    },
+    {
+      "text": "24(67%)",
+      "bbox": [
+        193.5,
+        234.0,
+        238.5,
+        247.0
+      ],
+      "confidence": 0.8580354963030133,
+      "block_num": 0,
+      "line_num": 30,
+      "span_num": 0
+    },
+    {
+      "text": "31(65%)",
+      "bbox": [
+        351.5,
+        233.5,
+        395.5,
+        247.0
+      ],
+      "confidence": 0.9314531598772321,
+      "block_num": 0,
+      "line_num": 31,
+      "span_num": 0
+    },
+    {
+      "text": "7(19%)",
+      "bbox": [
+        193.5,
+        253.0,
+        232.5,
+        267.0
+      ],
+      "confidence": 0.944913774728775,
+      "block_num": 0,
+      "line_num": 32,
+      "span_num": 0
+    },
+    {
+      "text": "12(25%）",
+      "bbox": [
+        352.0,
+        253.0,
+        395.5,
+        266.5
+      ],
+      "confidence": 0.884000974042075,
+      "block_num": 0,
+      "line_num": 33,
+      "span_num": 0
+    },
+    {
+      "text": "Menopausal status",
+      "bbox": [
+        36.5,
+        273.0,
+        120.0,
+        286.5
+      ],
+      "confidence": 0.9729690376450034,
+      "block_num": 0,
+      "line_num": 34,
+      "span_num": 0
+    },
+    {
+      "text": "Premenopausal",
+      "bbox": [
+        49.5,
+        292.5,
+        117.5,
+        306.0
+      ],
+      "confidence": 0.9935308924088111,
+      "block_num": 0,
+      "line_num": 35,
+      "span_num": 0
+    },
+    {
+      "text": "21(58%)",
+      "bbox": [
+        194.0,
+        292.5,
+        238.0,
+        306.0
+      ],
+      "confidence": 0.887303786618369,
+      "block_num": 0,
+      "line_num": 36,
+      "span_num": 0
+    },
+    {
+      "text": "17 (35%)",
+      "bbox": [
+        352.0,
+        292.0,
+        395.5,
+        306.0
+      ],
+      "confidence": 0.8569380715489388,
+      "block_num": 0,
+      "line_num": 37,
+      "span_num": 0
+    },
+    {
+      "text": "0.037",
+      "bbox": [
+        507.5,
+        292.5,
+        538.0,
+        306.5
+      ],
+      "confidence": 0.9946599960327148,
+      "block_num": 0,
+      "line_num": 38,
+      "span_num": 0
+    },
+    {
+      "text": "Postmenopausal",
+      "bbox": [
+        49.5,
+        312.5,
+        123.0,
+        326.0
+      ],
+      "confidence": 0.9811920736517225,
+      "block_num": 0,
+      "line_num": 39,
+      "span_num": 0
+    },
+    {
+      "text": "15(42%)",
+      "bbox": [
+        193.5,
+        312.0,
+        238.0,
+        325.5
+      ],
+      "confidence": 0.8797094566481454,
+      "block_num": 0,
+      "line_num": 40,
+      "span_num": 0
+    },
+    {
+      "text": "31(65%)",
+      "bbox": [
+        351.5,
+        312.0,
+        395.5,
+        325.5
+      ],
+      "confidence": 0.9431079285485404,
+      "block_num": 0,
+      "line_num": 41,
+      "span_num": 0
+    },
+    {
+      "text": "Oestrogen receptor status",
+      "bbox": [
+        37.0,
+        332.0,
+        153.0,
+        345.0
+      ],
+      "confidence": 0.9657681655883789,
+      "block_num": 0,
+      "line_num": 42,
+      "span_num": 0
+    },
+    {
+      "text": "Negative",
+      "bbox": [
+        48.5,
+        351.0,
+        90.5,
+        366.5
+      ],
+      "confidence": 0.9868105426430702,
+      "block_num": 0,
+      "line_num": 43,
+      "span_num": 0
+    },
+    {
+      "text": "10(55%)",
+      "bbox": [
+        194.0,
+        351.5,
+        238.5,
+        365.0
+      ],
+      "confidence": 0.9039690579686847,
+      "block_num": 0,
+      "line_num": 44,
+      "span_num": 0
+    },
+    {
+      "text": "27(56%)",
+      "bbox": [
+        351.5,
+        351.0,
+        396.0,
+        365.0
+      ],
+      "confidence": 0.9407553502491542,
+      "block_num": 0,
+      "line_num": 45,
+      "span_num": 0
+    },
+    {
+      "text": "NS",
+      "bbox": [
+        508.5,
+        352.0,
+        525.0,
+        364.5
+      ],
+      "confidence": 0.9876347184181213,
+      "block_num": 0,
+      "line_num": 46,
+      "span_num": 0
+    },
+    {
+      "text": "Positive",
+      "bbox": [
+        47.5,
+        369.5,
+        86.0,
+        385.0
+      ],
+      "confidence": 0.9290415272116661,
+      "block_num": 0,
+      "line_num": 47,
+      "span_num": 0
+    },
+    {
+      "text": "8(45%)",
+      "bbox": [
+        194.0,
+        371.0,
+        232.0,
+        383.0
+      ],
+      "confidence": 0.8794647951920828,
+      "block_num": 0,
+      "line_num": 48,
+      "span_num": 0
+    },
+    {
+      "text": "21 (44%)",
+      "bbox": [
+        351.5,
+        370.5,
+        395.5,
+        384.0
+      ],
+      "confidence": 0.8707323968410492,
+      "block_num": 0,
+      "line_num": 49,
+      "span_num": 0
+    },
+    {
+      "text": "Nodal metastasis",
+      "bbox": [
+        35.5,
+        391.0,
+        112.0,
+        403.0
+      ],
+      "confidence": 0.9774760119616985,
+      "block_num": 0,
+      "line_num": 50,
+      "span_num": 0
+    },
+    {
+      "text": "Negative",
+      "bbox": [
+        49.0,
+        409.0,
+        90.0,
+        425.0
+      ],
+      "confidence": 0.9916526824235916,
+      "block_num": 0,
+      "line_num": 51,
+      "span_num": 0
+    },
+    {
+      "text": "12(33%)",
+      "bbox": [
+        194.0,
+        410.0,
+        238.5,
+        423.5
+      ],
+      "confidence": 0.8802835089819772,
+      "block_num": 0,
+      "line_num": 52,
+      "span_num": 0
+    },
+    {
+      "text": "21(44%)",
+      "bbox": [
+        351.5,
+        409.5,
+        395.5,
+        423.5
+      ],
+      "confidence": 0.8445961219923837,
+      "block_num": 0,
+      "line_num": 53,
+      "span_num": 0
+    },
+    {
+      "text": "NS",
+      "bbox": [
+        507.5,
+        410.0,
+        525.5,
+        423.5
+      ],
+      "confidence": 0.9940623342990875,
+      "block_num": 0,
+      "line_num": 54,
+      "span_num": 0
+    },
+    {
+      "text": "Positive",
+      "bbox": [
+        48.5,
+        429.5,
+        86.0,
+        443.5
+      ],
+      "confidence": 0.964554637670517,
+      "block_num": 0,
+      "line_num": 55,
+      "span_num": 0
+    },
+    {
+      "text": "24(67%)",
+      "bbox": [
+        193.5,
+        429.5,
+        238.5,
+        443.0
+      ],
+      "confidence": 0.9488977534430367,
+      "block_num": 0,
+      "line_num": 56,
+      "span_num": 0
+    },
+    {
+      "text": "27 (56%)",
+      "bbox": [
+        351.5,
+        429.5,
+        396.0,
+        443.0
+      ],
+      "confidence": 0.9213025867938995,
+      "block_num": 0,
+      "line_num": 57,
+      "span_num": 0
+    },
+    {
+      "text": "Distant metastasis",
+      "bbox": [
+        36.5,
+        449.0,
+        118.0,
+        462.0
+      ],
+      "confidence": 0.9806923402680291,
+      "block_num": 0,
+      "line_num": 58,
+      "span_num": 0
+    },
+    {
+      "text": "Negative",
+      "bbox": [
+        49.0,
+        468.5,
+        90.0,
+        483.5
+      ],
+      "confidence": 0.9311315044760704,
+      "block_num": 0,
+      "line_num": 59,
+      "span_num": 0
+    },
+    {
+      "text": "27(754)",
+      "bbox": [
+        193.5,
+        469.0,
+        238.0,
+        482.0
+      ],
+      "confidence": 0.8831327983311245,
+      "block_num": 0,
+      "line_num": 60,
+      "span_num": 0
+    },
+    {
+      "text": "41(85%)",
+      "bbox": [
+        351.5,
+        468.5,
+        395.5,
+        482.0
+      ],
+      "confidence": 0.9539936099733625,
+      "block_num": 0,
+      "line_num": 61,
+      "span_num": 0
+    },
+    {
+      "text": "NS",
+      "bbox": [
+        508.0,
+        468.5,
+        526.0,
+        482.5
+      ],
+      "confidence": 0.9930048584938049,
+      "block_num": 0,
+      "line_num": 62,
+      "span_num": 0
+    },
+    {
+      "text": "Positive",
+      "bbox": [
+        48.0,
+        487.5,
+        86.0,
+        502.0
+      ],
+      "confidence": 0.9795129746198654,
+      "block_num": 0,
+      "line_num": 63,
+      "span_num": 0
+    },
+    {
+      "text": "9(25%)",
+      "bbox": [
+        193.0,
+        488.0,
+        232.5,
+        502.0
+      ],
+      "confidence": 0.9384456475575765,
+      "block_num": 0,
+      "line_num": 64,
+      "span_num": 0
+    },
+    {
+      "text": "7(159)",
+      "bbox": [
+        351.0,
+        488.0,
+        390.0,
+        502.0
+      ],
+      "confidence": 0.8178248604138693,
+      "block_num": 0,
+      "line_num": 65,
+      "span_num": 0
+    },
+    {
+      "text": "Numbers in parenthesesindicate percentages in the same expression pattern.NS,not significant.",
+      "bbox": [
+        35.5,
+        508.5,
+        455.5,
+        523.0
+      ],
+      "confidence": 0.9408391656414155,
+      "block_num": 0,
+      "line_num": 66,
+      "span_num": 0
+    }
+  ],
+  "table": {
+    "rows": 24,
+    "columns": 4,
+    "bbox": [
+      36.730472564697266,
+      36.46381378173828,
+      535.0513916015625,
+      500.267578125
+    ],
+    "cells": [
+      {
+        "bbox": [
+          36.730472564697266,
+          36.46381378173828,
+          173.7858123779297,
+          52.910667419433594
+        ],
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "LPA2expression",
+        "column header": true,
+        "projected row header": false,
+        "token_indices": [
+          1
+        ],
+        "ocr_confidence": 0.9833872403417315
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          36.46381378173828,
+          292.8709411621094,
+          52.910667419433594
+        ],
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "Low(36)",
+        "column header": true,
+        "projected row header": false,
+        "token_indices": [
+          2
+        ],
+        "ocr_confidence": 0.9386218190193176
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          36.46381378173828,
+          449.9448547363281,
+          52.910667419433594
+        ],
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "High (48)",
+        "column header": true,
+        "projected row header": false,
+        "token_indices": [
+          3
+        ],
+        "ocr_confidence": 0.9244676166110568
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          36.46381378173828,
+          535.0513916015625,
+          52.910667419433594
+        ],
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "P",
+        "column header": true,
+        "projected row header": false,
+        "token_indices": [
+          4
+        ],
+        "ocr_confidence": 0.9400408864021301
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          53.14457702636719,
+          535.0513916015625,
+          72.95008850097656
+        ],
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "text": "Age (years)",
+        "column header": false,
+        "projected row header": true,
+        "token_indices": [
+          5
+        ],
+        "ocr_confidence": 0.9579990939660505
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          73.13629150390625,
+          173.7858123779297,
+          92.68124389648438
+        ],
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "<50",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          6
+        ],
+        "ocr_confidence": 0.9298448363939921
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          73.13629150390625,
+          292.8709411621094,
+          92.68124389648438
+        ],
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "20(56%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          7
+        ],
+        "ocr_confidence": 0.941021374293736
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          73.13629150390625,
+          449.9448547363281,
+          92.68124389648438
+        ],
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "16(339)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          8
+        ],
+        "ocr_confidence": 0.9034923911094666
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          73.13629150390625,
+          535.0513916015625,
+          92.68124389648438
+        ],
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "0.042",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          9
+        ],
+        "ocr_confidence": 0.9938553810119629
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          92.77500915527344,
+          173.7858123779297,
+          112.30590057373047
+        ],
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "250",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          10
+        ],
+        "ocr_confidence": 0.8299993375937144
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          92.77500915527344,
+          292.8709411621094,
+          112.30590057373047
+        ],
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "16(44%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          11
+        ],
+        "ocr_confidence": 0.9270668455532619
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          92.77500915527344,
+          449.9448547363281,
+          112.30590057373047
+        ],
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "32(67%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          12
+        ],
+        "ocr_confidence": 0.8968758668218341
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          92.77500915527344,
+          535.0513916015625,
+          112.30590057373047
+        ],
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          112.58094024658203,
+          535.0513916015625,
+          131.96641540527344
+        ],
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "text": "Tumour size",
+        "column header": false,
+        "projected row header": true,
+        "token_indices": [
+          13
+        ],
+        "ocr_confidence": 0.9626260454004462
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          132.01284790039062,
+          173.7858123779297,
+          151.64755249023438
+        ],
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "T1(≤2.0 cm)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          14
+        ],
+        "ocr_confidence": 0.8570147969506003
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          132.01284790039062,
+          292.8709411621094,
+          151.64755249023438
+        ],
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "16(44%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          15
+        ],
+        "ocr_confidence": 0.9043149777821132
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          132.01284790039062,
+          449.9448547363281,
+          151.64755249023438
+        ],
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "17(35%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          16
+        ],
+        "ocr_confidence": 0.9242218562534877
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          132.01284790039062,
+          535.0513916015625,
+          151.64755249023438
+        ],
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "NS",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          17
+        ],
+        "ocr_confidence": 0.9939527809619904
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          151.7307891845703,
+          173.7858123779297,
+          171.34307861328125
+        ],
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "T2(>2.0cmto≤5.0cm)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          18
+        ],
+        "ocr_confidence": 0.9022975315650305
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          151.7307891845703,
+          292.8709411621094,
+          171.34307861328125
+        ],
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "18(50%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          19
+        ],
+        "ocr_confidence": 0.9432622194290161
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          151.7307891845703,
+          449.9448547363281,
+          171.34307861328125
+        ],
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "25(52%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          20
+        ],
+        "ocr_confidence": 0.9494032093456813
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          151.7307891845703,
+          535.0513916015625,
+          171.34307861328125
+        ],
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          171.5330047607422,
+          173.7858123779297,
+          191.02261352539062
+        ],
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "T3 (>5.0cm）",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          21
+        ],
+        "ocr_confidence": 0.8820957487279718
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          171.5330047607422,
+          292.8709411621094,
+          191.02261352539062
+        ],
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "2(6%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          22
+        ],
+        "ocr_confidence": 0.8919897079467773
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          171.5330047607422,
+          449.9448547363281,
+          191.02261352539062
+        ],
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "6(13%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          23
+        ],
+        "ocr_confidence": 0.8240673740704855
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          171.5330047607422,
+          535.0513916015625,
+          191.02261352539062
+        ],
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          190.94186401367188,
+          535.0513916015625,
+          210.52978515625
+        ],
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "text": "Nuclear grade",
+        "column header": false,
+        "projected row header": true,
+        "token_indices": [
+          24
+        ],
+        "ocr_confidence": 0.9661277899375329
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          210.34014892578125,
+          173.7858123779297,
+          229.88319396972656
+        ],
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "1",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          25
+        ],
+        "ocr_confidence": 0.5377753973007202
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          210.34014892578125,
+          292.8709411621094,
+          229.88319396972656
+        ],
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "5(14%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          26
+        ],
+        "ocr_confidence": 0.9150203367074331
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          210.34014892578125,
+          449.9448547363281,
+          229.88319396972656
+        ],
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "5(10%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          27
+        ],
+        "ocr_confidence": 0.9277086754639944
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          210.34014892578125,
+          535.0513916015625,
+          229.88319396972656
+        ],
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "NS",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          28
+        ],
+        "ocr_confidence": 0.9926967620849609
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          229.8976593017578,
+          173.7858123779297,
+          249.6350860595703
+        ],
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "I",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          29
+        ],
+        "ocr_confidence": 0.5254700183868408
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          229.8976593017578,
+          292.8709411621094,
+          249.6350860595703
+        ],
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "24(67%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          30
+        ],
+        "ocr_confidence": 0.8580354963030133
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          229.8976593017578,
+          449.9448547363281,
+          249.6350860595703
+        ],
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "31(65%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          31
+        ],
+        "ocr_confidence": 0.9314531598772321
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          229.8976593017578,
+          535.0513916015625,
+          249.6350860595703
+        ],
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          249.42811584472656,
+          173.7858123779297,
+          269.0250244140625
+        ],
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          249.42811584472656,
+          292.8709411621094,
+          269.0250244140625
+        ],
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "7(19%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          32
+        ],
+        "ocr_confidence": 0.944913774728775
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          249.42811584472656,
+          449.9448547363281,
+          269.0250244140625
+        ],
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "12(25%）",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          33
+        ],
+        "ocr_confidence": 0.884000974042075
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          249.42811584472656,
+          535.0513916015625,
+          269.0250244140625
+        ],
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          268.88153076171875,
+          535.0513916015625,
+          288.47967529296875
+        ],
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "text": "Menopausal status",
+        "column header": false,
+        "projected row header": true,
+        "token_indices": [
+          34
+        ],
+        "ocr_confidence": 0.9729690376450034
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          288.7007751464844,
+          173.7858123779297,
+          308.32666015625
+        ],
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Premenopausal",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          35
+        ],
+        "ocr_confidence": 0.9935308924088111
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          288.7007751464844,
+          292.8709411621094,
+          308.32666015625
+        ],
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "21(58%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          36
+        ],
+        "ocr_confidence": 0.887303786618369
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          288.7007751464844,
+          449.9448547363281,
+          308.32666015625
+        ],
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "17 (35%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          37
+        ],
+        "ocr_confidence": 0.8569380715489388
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          288.7007751464844,
+          535.0513916015625,
+          308.32666015625
+        ],
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "0.037",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          38
+        ],
+        "ocr_confidence": 0.9946599960327148
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          307.6807861328125,
+          173.7858123779297,
+          327.32989501953125
+        ],
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Postmenopausal",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          39
+        ],
+        "ocr_confidence": 0.9811920736517225
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          307.6807861328125,
+          292.8709411621094,
+          327.32989501953125
+        ],
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "15(42%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          40
+        ],
+        "ocr_confidence": 0.8797094566481454
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          307.6807861328125,
+          449.9448547363281,
+          327.32989501953125
+        ],
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "31(65%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          41
+        ],
+        "ocr_confidence": 0.9431079285485404
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          307.6807861328125,
+          535.0513916015625,
+          327.32989501953125
+        ],
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          327.3309631347656,
+          535.0513916015625,
+          346.9558410644531
+        ],
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "text": "Oestrogen receptor status",
+        "column header": false,
+        "projected row header": true,
+        "token_indices": [
+          42
+        ],
+        "ocr_confidence": 0.9657681655883789
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          347.0658264160156,
+          173.7858123779297,
+          366.7003173828125
+        ],
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Negative",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          43
+        ],
+        "ocr_confidence": 0.9868105426430702
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          347.0658264160156,
+          292.8709411621094,
+          366.7003173828125
+        ],
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "10(55%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          44
+        ],
+        "ocr_confidence": 0.9039690579686847
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          347.0658264160156,
+          449.9448547363281,
+          366.7003173828125
+        ],
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "27(56%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          45
+        ],
+        "ocr_confidence": 0.9407553502491542
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          347.0658264160156,
+          535.0513916015625,
+          366.7003173828125
+        ],
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "NS",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          46
+        ],
+        "ocr_confidence": 0.9876347184181213
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          366.7782287597656,
+          173.7858123779297,
+          386.3878173828125
+        ],
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Positive",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          47
+        ],
+        "ocr_confidence": 0.9290415272116661
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          366.7782287597656,
+          292.8709411621094,
+          386.3878173828125
+        ],
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "8(45%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          48
+        ],
+        "ocr_confidence": 0.8794647951920828
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          366.7782287597656,
+          449.9448547363281,
+          386.3878173828125
+        ],
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "21 (44%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          49
+        ],
+        "ocr_confidence": 0.8707323968410492
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          366.7782287597656,
+          535.0513916015625,
+          386.3878173828125
+        ],
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          386.47991943359375,
+          535.0513916015625,
+          405.9628601074219
+        ],
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "text": "Nodal metastasis",
+        "column header": false,
+        "projected row header": true,
+        "token_indices": [
+          50
+        ],
+        "ocr_confidence": 0.9774760119616985
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          406.043212890625,
+          173.7858123779297,
+          425.58355712890625
+        ],
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Negative",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          51
+        ],
+        "ocr_confidence": 0.9916526824235916
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          406.043212890625,
+          292.8709411621094,
+          425.58355712890625
+        ],
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "12(33%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          52
+        ],
+        "ocr_confidence": 0.8802835089819772
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          406.043212890625,
+          449.9448547363281,
+          425.58355712890625
+        ],
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "21(44%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          53
+        ],
+        "ocr_confidence": 0.8445961219923837
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          406.043212890625,
+          535.0513916015625,
+          425.58355712890625
+        ],
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "NS",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          54
+        ],
+        "ocr_confidence": 0.9940623342990875
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          425.5656433105469,
+          173.7858123779297,
+          445.2693786621094
+        ],
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Positive",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          55
+        ],
+        "ocr_confidence": 0.964554637670517
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          425.5656433105469,
+          292.8709411621094,
+          445.2693786621094
+        ],
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "24(67%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          56
+        ],
+        "ocr_confidence": 0.9488977534430367
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          425.5656433105469,
+          449.9448547363281,
+          445.2693786621094
+        ],
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "27 (56%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          57
+        ],
+        "ocr_confidence": 0.9213025867938995
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          425.5656433105469,
+          535.0513916015625,
+          445.2693786621094
+        ],
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [],
+        "ocr_confidence": null
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          445.3230895996094,
+          535.0513916015625,
+          464.8783874511719
+        ],
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "text": "Distant metastasis",
+        "column header": false,
+        "projected row header": true,
+        "token_indices": [
+          58
+        ],
+        "ocr_confidence": 0.9806923402680291
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          464.944091796875,
+          173.7858123779297,
+          484.58599853515625
+        ],
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Negative",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          59
+        ],
+        "ocr_confidence": 0.9311315044760704
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          464.944091796875,
+          292.8709411621094,
+          484.58599853515625
+        ],
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "27(754)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          60
+        ],
+        "ocr_confidence": 0.8831327983311245
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          464.944091796875,
+          449.9448547363281,
+          484.58599853515625
+        ],
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "41(85%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          61
+        ],
+        "ocr_confidence": 0.9539936099733625
+      },
+      {
+        "bbox": [
+          451.9290771484375,
+          464.944091796875,
+          535.0513916015625,
+          500.267578125
+        ],
+        "row_nums": [
+          22,
+          23
+        ],
+        "column_nums": [
+          3
+        ],
+        "text": "NS",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          62
+        ],
+        "ocr_confidence": 0.9930048584938049
+      },
+      {
+        "bbox": [
+          36.730472564697266,
+          484.67803955078125,
+          173.7858123779297,
+          500.267578125
+        ],
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "text": "Positive",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          63
+        ],
+        "ocr_confidence": 0.9795129746198654
+      },
+      {
+        "bbox": [
+          172.8664093017578,
+          484.67803955078125,
+          292.8709411621094,
+          500.267578125
+        ],
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "text": "9(25%)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          64
+        ],
+        "ocr_confidence": 0.9384456475575765
+      },
+      {
+        "bbox": [
+          293.3528747558594,
+          484.67803955078125,
+          449.9448547363281,
+          500.267578125
+        ],
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "text": "7(159)",
+        "column header": false,
+        "projected row header": false,
+        "token_indices": [
+          65
+        ],
+        "ocr_confidence": 0.8178248604138693
+      }
+    ],
+    "assigned_tokens": 65,
+    "unassigned_tokens": [
+      {
+        "text": "Therelationshipbetweenlysophosphatidicacidreceptor2(LPA2)expressionandclinical/pathologicalfactor",
+        "bbox": [
+          32.0,
+          14.0,
+          559.5,
+          26.5
+        ],
+        "confidence": 0.9872121067391229,
+        "block_num": 0,
+        "line_num": 0,
+        "span_num": 0
+      },
+      {
+        "text": "Numbers in parenthesesindicate percentages in the same expression pattern.NS,not significant.",
+        "bbox": [
+          35.5,
+          508.5,
+          455.5,
+          523.0
+        ],
+        "confidence": 0.9408391656414155,
+        "block_num": 0,
+        "line_num": 66,
+        "span_num": 0
+      }
+    ],
+    "ambiguous_token_indices": [],
+    "mean_token_cell_overlap": 0.9603839545422684
+  },
+  "seconds": {
+    "ocr": 3.2682,
+    "tatr": 0.8177,
+    "fusion": 0.211
+  }
+}

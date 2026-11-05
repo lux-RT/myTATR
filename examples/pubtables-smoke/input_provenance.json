@@ -1,0 +1,34 @@
+[
+  {
+    "image": "PMC1262774_table_0.jpg",
+    "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1262774/",
+    "source_dataset": "https://huggingface.co/datasets/bsmock/pubtables-1m",
+    "sha256": "393eae9c600dfad1fa7f9aaed189fd9d35524e10294e2755374d466e47a54ef5",
+    "annotated_rows": 5,
+    "annotated_columns": 4
+  },
+  {
+    "image": "PMC1064078_table_0.jpg",
+    "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1064078/",
+    "source_dataset": "https://huggingface.co/datasets/bsmock/pubtables-1m",
+    "sha256": "59e062dc3379be366f684b6cfff8fbce71fce4d118ae3dccfe86148058e2be88",
+    "annotated_rows": 9,
+    "annotated_columns": 6
+  },
+  {
+    "image": "PMC1064082_table_1.jpg",
+    "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1064082/",
+    "source_dataset": "https://huggingface.co/datasets/bsmock/pubtables-1m",
+    "sha256": "50a710e50f4e58fb2b3f7d7d0c4cec076c44ed53bf7760c4300536415f729990",
+    "annotated_rows": 24,
+    "annotated_columns": 4
+  },
+  {
+    "image": "PMC1064879_table_0.jpg",
+    "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1064879/",
+    "source_dataset": "https://huggingface.co/datasets/bsmock/pubtables-1m",
+    "sha256": "3a314084d05f70ecdd4fa46e1ba9fcc520442540311ac7c4bfbe2065126158ab",
+    "annotated_rows": 33,
+    "annotated_columns": 5
+  }
+]
