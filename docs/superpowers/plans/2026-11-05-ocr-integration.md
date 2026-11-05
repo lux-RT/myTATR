@@ -47,7 +47,7 @@
 - [x] Add setup/reproduction instructions, exact file-change explanation and sample report.
 - [x] Check complete tests, dependency consistency, outputs and a fresh offline run.
 - [x] Obtain independent code review, address important findings.
-- [ ] Commit and push the verified implementation and curated sample artifacts to the remote's original branch; verify remote commit.
+- [x] Commit and push the verified implementation and curated sample artifacts to the remote's original branch; verify remote commit.
 
 ## Execution ledger
 
@@ -57,5 +57,7 @@
 
 - Task 1: complete — official postprocessor adapted; geometry and export tests pass.
 - Task 2: complete — final four-image offline run exited 0; output accounting/grid/CSV checks pass.
-- Task 3: verification complete — 14 tests and both pip checks pass; independent review issues fixed and reviewed. Publication pending.
+- Task 3: verification complete — 14 tests and both pip checks pass; independent review issues fixed and reviewed. Implementation published to original main branch; remote verified at 3f3ffaa7b22bef01f1f3edcc2e75a67731050d7a.
 - Ruling: include only four attributed small sample images and derived artifacts to permit reproduction without the full dataset.
+
+- Task 3: complete — original main branch pushed and remote commit independently verified.
