@@ -39,7 +39,7 @@
 - [x] Add `run.bat`, prefer repo `.venv-tatr`, fall back to sibling `.venv-download`; force UTF-8 and preserve exit code.
 - [x] Update README and ignore `.idea/`.
 - [x] Test actual launcher cancellation and one real-image interactive inference.
-- [ ] Obtain code review, fix important findings, run final checks, commit and push original branch.
+- [x] Obtain code review, fix important findings, run final checks, commit and push original branch.
 
 ## Verification ledger
 
@@ -47,4 +47,4 @@
 - Selector and CLI: 28 tests passed, including cancellation before model access/output creation and explicit-image bypass.
 - Actual Windows launcher: cancellation exits 0 without output directory; UTF-8/Chinese path launch verified.
 - Actual selected-image inference: chose menu 1, image 2; exited 0; recovered 9 x 6 grid, 48/49 OCR tokens assigned, all four artifact types verified.
-- Independent review: no important findings. Original branch publication pending.
+- Independent review: no important findings. Implementation pushed to original main branch and remote verified at b87a6d69adfa2c2eeb2f4702484737aa5fe8dfbc.
