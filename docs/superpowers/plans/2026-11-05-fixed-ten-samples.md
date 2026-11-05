@@ -26,7 +26,7 @@
 - [x] Implement input resolution and remove interactive code/tests/flags; simplify `run.bat`.
 - [x] Update usage instructions and sample provenance documentation.
 - [x] Run full tests and actual launcher on all ten images; verify artifacts and record real outcomes.
-- [ ] Obtain independent review; fix important findings; commit/push/verify original main branch.
+- [x] Obtain independent review; fix important findings; commit/push/verify original main branch.
 
 ## Verification ledger
 
@@ -34,4 +34,4 @@
 - Actual `run.bat --out outputs/ten-sample-test` exited 0 without stdin, processing all ten images.
 - Source hashes and bytes match the downloaded dataset; all 40 per-image artifacts verified, with correct CSV dimensions, complete grid coverage and token accounting.
 - All ten predicted row/column counts match independently read annotations. This is not an OCR or merged-cell accuracy evaluation.
-- Independent reviewer: no important issues. Original main publication pending.
+- Independent reviewer: no important issues. Published to original main branch and remote verified at 489114e41280d2a341e533594193a658a8c5a9f8. Ten committed sample hashes also verified.
