@@ -9,11 +9,11 @@ try {
     if ($LASTEXITCODE -ne 0) { throw "Could not install CPU torch" }
     & .\.venv-tatr\Scripts\python.exe -m pip install -r requirements-tatr-lock.txt
     if ($LASTEXITCODE -ne 0) { throw "Could not install TATR dependencies" }
-    & $Python -m venv .venv-ocr
+    & $Python -m venv .venv-ocr-v6
     if ($LASTEXITCODE -ne 0) { throw "Could not create OCR environment" }
-    & .\.venv-ocr\Scripts\python.exe -m pip install -r requirements-ocr-lock.txt
+    & .\.venv-ocr-v6\Scripts\python.exe -m pip install -r requirements-ocr-lock.txt
     if ($LASTEXITCODE -ne 0) { throw "Could not install OCR dependencies" }
-    Write-Host "Ready. Run prepare_model.py if you do not already have the local TATR checkpoint."
+    Write-Host "Ready. Run prepare_model.py if you need TATR weights. First OCR run downloads PP-OCRv6 weights."
 } finally {
     Pop-Location
 }

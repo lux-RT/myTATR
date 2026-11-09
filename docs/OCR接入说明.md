@@ -9,9 +9,9 @@
 ## 运行时的数据如何流动
 
 1. `run_table_ocr.py` 检查图片和本地模型，并拒绝输出文件名冲突。
-2. 主进程用 `subprocess.run(..., check=True)` 调用 `.venv-ocr` 中的 `ocr_worker.py`。两个环境之间只交换 UTF-8 JSON，避免 OCR 依赖升级现有 PyTorch/Transformers。
+2. 主进程用 `subprocess.run(..., check=True)` 调用 `.venv-ocr-v6` 中的 `ocr_worker.py`。两个环境之间只交换 UTF-8 JSON，避免 OCR 依赖升级现有 PyTorch/Transformers。
 3. `ocr_worker.py` 在 PIL 中统一 EXIF 方向，默认放大 2 倍后，用 RapidOCR 检测和识别；关闭 180 度方向分类器，适合当前朝向正常的数据集样本。
-4. `normalize_lines()` 将 OCR 四边形转换为 `[xmin,ymin,xmax,ymax]`。使用放大后真实宽高与原图宽高的比值分别还原两个方向，避免非整数放大的舍入误差。
+4. `normalize_result()` 接收新版 `boxes/txts/scores` 数组，经 `normalize_lines()` 将 OCR 四边形转换为 `[xmin,ymin,xmax,ymax]`。使用放大后真实宽高与原图宽高的比值分别还原两个方向，避免非整数放大的舍入误差。
 5. 主进程加载 `TableTransformerForObjectDetection`，保持原有本地权重和 `AutoImageProcessor` 预处理，得到原图坐标的行列、表头、合并区域。
 6. `fuse()` 将 Transformers 字符串标签转换为微软 `postprocess.objects_to_cells()` 需要的类别索引，复用对齐、去重和合并单元格处理。这里先传空 token 列表构建结构，防止官方“删除无文字行列”的规则把 OCR 漏字误当成空结构。
 7. 再调用 `slot_into_containers()`，采用 `overlap_threshold=0.5`、`unique_assignment=True`、`forced_assignment=False`，把每个 OCR token 分配到覆盖其面积最多的单元格；同格文字按几何位置组成多行文本。
@@ -20,7 +20,7 @@
 
 ## 为什么是 RapidOCR 而不是直接安装 PaddleOCR
 
-讨论阶段建议过 PaddleOCR。实际实现采用 RapidOCR-ONNXRuntime 1.4.4，它打包 PP-OCRv4 检测/识别 ONNX 模型，便于 Windows CPU 安装及离线复跑。它与 TATR 通过统一的 token JSON 对接；以后切换 PaddleOCR、新版 RapidOCR 或英文专用 OCR 时，可以保留融合、导出和 TATR 推理部分。
+初次接入使用 rapidocr-onnxruntime 1.4.4（PP-OCRv4）。当前已升级到 rapidocr 3.10.0 + ONNX Runtime 1.31.1，明确选择 PP-OCRv6 small 检测/识别模型，以适配 Windows CPU。首次运行联网下载到 `models/ocr-v6/`，后续复用缓存；方向分类器关闭。旧环境和历史测试记录保留。TATR、融合和导出算法不因本次 OCR 升级而改变。具体代码和测试见 [PP-OCRv6 接入与测试](PP-OCRv6接入与测试.md)。
 
 当前 OCR 输出是行级文字框。它可能把相邻列的文字看成同一行；这个问题需要进一步引入词/字符框，或对歧义单元格裁图重识别。此版本保留并报告问题，未通过人工改写预测文字制造正确结果。
 

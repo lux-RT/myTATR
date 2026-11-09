@@ -3,7 +3,7 @@ import os
 import tempfile
 import unittest
 
-from run_table_ocr import build_parser
+from run_table_ocr import build_parser, venv_python
 from tatr_ocr.inputs import resolve_images
 
 
@@ -23,6 +23,7 @@ class DefaultSampleTests(unittest.TestCase):
         self.assertEqual(len(paths), 10)
         self.assertTrue(all(p.is_file() and p.parent == ROOT / "sample_images" for p in paths))
         self.assertEqual(len({p.name for p in paths}), 10)
+        self.assertEqual(args.ocr_python, venv_python(".venv-ocr-v6"))
 
     def test_directory_filters_supported_images_and_sorts_names(self):
         with tempfile.TemporaryDirectory() as directory:

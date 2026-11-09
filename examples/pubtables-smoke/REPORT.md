@@ -1,5 +1,7 @@
 # TATR + OCR 本地实测（2026-11-05）
 
+这是 PP-OCRv4 历史记录。当前默认入口已切换 PP-OCRv6；下方命令在当前代码上会生成 v6 结果。重现原 v4 实现需检出提交 `230f45d` 并使用旧 `.venv-ocr` 环境；新测试见 [PP-OCRv6 接入与测试](../../docs/PP-OCRv6接入与测试.md)。
+
 四张图片均取自已下载的 **PubTables-1M 测试集**，未使用 XML 或文字真值参与推理。原图的四个小样本放在 `input/`，用于重现本报告；完整数据集和权重不上传。
 
 打开 [`index.html`](index.html) 查看原图、标注图及重建表格；[`comparison.png`](comparison.png) 是四张图的原图/坐标框总览。每张图另有 HTML、CSV、完整预测 JSON。

@@ -35,7 +35,7 @@ def build_parser():
     parser.add_argument("--image-dir", type=Path, default=ROOT / "sample_images",
                         help="Image directory; defaults to the ten bundled samples")
     parser.add_argument("--model-dir", type=Path, default=default_model_dir(ROOT))
-    parser.add_argument("--ocr-python", type=Path, default=venv_python(".venv-ocr"))
+    parser.add_argument("--ocr-python", type=Path, default=venv_python(".venv-ocr-v6"))
     parser.add_argument("--out", type=Path, default=ROOT / "outputs" / datetime.now().strftime("%Y%m%d-%H%M%S"))
     parser.add_argument("--threshold", type=float, default=.5)
     parser.add_argument("--ocr-scale", type=float, default=2.0)
@@ -124,6 +124,8 @@ def main():
     summary = {"device": "cpu", "tatr": "microsoft/table-transformer-structure-recognition",
                "torch": torch.__version__, "transformers": version("transformers"),
                "ocr_engine": ocr["engine"], "ocr_version": ocr["version"],
+               "ocr_model_family": ocr["model_family"], "ocr_model_tier": ocr["model_tier"],
+               "ocr_models": ocr["models"], "ocr_orientation_classifier": ocr["orientation_classifier"],
                "onnxruntime_version": ocr["onnxruntime_version"], "ocr_scale": args.ocr_scale,
                "model_load_seconds": round(load_seconds, 4), "images": results,
                "limitations": "Cropped-table smoke test; token assignment rate is NOT OCR accuracy or GriTS."}
