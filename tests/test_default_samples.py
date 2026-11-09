@@ -29,13 +29,22 @@ class DefaultSampleTests(unittest.TestCase):
             root = Path(directory)
             for name in ["b.png", "A.JPG", "manifest.json", "notes.txt"]:
                 (root / name).touch()
-            self.assertEqual(resolve_images(None, root), [root / "A.JPG", root / "b.png"])
+            paths = resolve_images(None, root)
+            self.assertEqual([p.name for p in paths], ["A.JPG", "b.png"])
+            # Windows CI may spell the same directory as RUNNER~1 or runneradmin.
+            # Compare file identity, while still checking filtering and sort order.
+            for actual, expected in zip(paths, [root / "A.JPG", root / "b.png"]):
+                self.assertTrue(actual.is_absolute())
+                self.assertTrue(actual.samefile(expected))
 
     def test_explicit_images_override_default_directory(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "custom.jpg"
             path.touch()
-            self.assertEqual(resolve_images([path], Path(directory) / "missing"), [path])
+            paths = resolve_images([path], Path(directory) / "missing")
+            self.assertEqual(len(paths), 1)
+            self.assertTrue(paths[0].is_absolute())
+            self.assertTrue(paths[0].samefile(path))
 
     def test_missing_or_empty_directory_reports_problem(self):
         with tempfile.TemporaryDirectory() as directory:
