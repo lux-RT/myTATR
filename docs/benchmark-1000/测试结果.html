@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>1000张表格双版本测试结果</title>
+<style>body{max-width:1200px;margin:48px auto;color:#203448;font:18px/1.8 SimSun,serif}h1{font-size:30px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #bac7d1;padding:8px}th{background:#e9eff4}a{color:#245e88}</style>
+<h1>PubTables-1M：1000 张测试表格双版本评估</h1>
+<p>从官方 93,834 张测试表格中固定随机抽取 1000 张，随机种子 42。两套系统采用相同图片和标准答案，使用官方 GriTS 与 AccCon 评价。所有失败样本计入分母。</p>
+<table><tr><th>分组</th><th>流程</th><th>样本数</th><th>AccCon</th><th>GriTS Top</th><th>GriTS Con</th><th>GriTS Loc</th><th>运行失败</th></tr><tr><td>全部表格</td><td>官方评价条件基线</td><td>1000</td><td>82.10%</td><td>98.20%</td><td>98.17%</td><td>97.38%</td><td>0</td></tr><tr><td>全部表格</td><td>TATR + PP-OCRv6 当前系统</td><td>1000</td><td>7.30%</td><td>98.07%</td><td>93.73%</td><td>50.65%</td><td>0</td></tr><tr><td>简单表格</td><td>官方评价条件基线</td><td>482</td><td>94.19%</td><td>99.04%</td><td>98.88%</td><td>98.49%</td><td>0</td></tr><tr><td>简单表格</td><td>TATR + PP-OCRv6 当前系统</td><td>482</td><td>10.17%</td><td>98.97%</td><td>94.41%</td><td>51.62%</td><td>0</td></tr><tr><td>复杂表格</td><td>官方评价条件基线</td><td>518</td><td>70.85%</td><td>97.42%</td><td>97.52%</td><td>96.35%</td><td>0</td></tr><tr><td>复杂表格</td><td>TATR + PP-OCRv6 当前系统</td><td>518</td><td>4.63%</td><td>97.23%</td><td>93.10%</td><td>49.74%</td><td>0</td></tr></table>
+<p>AccCon 是整表内容完全正确的比例；GriTS 是平均相似度分数，不是整表成功率。简单表与复杂表按官方标准答案是否包含跨行或跨列单元格划分。</p>
+<p>论文表 4 中 Canonical / DETR / All 的参考值依次为：AccCon 81.38%、GriTS Top 98.45%、GriTS Con 98.46%、GriTS Loc 97.81%。论文是全测试集结果，权重、代码及样本范围需结合本次记录解释，不能仅凭数值接近认定完成全部论文实验。</p>
+<p>官方评价条件基线采用微软 Hugging Face 发布权重、官方最长边 1000 像素预处理、官方词信息及后处理。当前系统保留原有 AutoImageProcessor、PP-OCRv6 small（放大 2 倍）及文字融合流程。因此差值同时包含预处理、OCR 和后处理的影响。</p>
+<p>位置指标还受到边界生成规则影响：官方后处理依据词框调整行列和单元格边界，当前融合流程先在空词信息上构造结构框，随后填入 OCR 文字。因此 GriTS Loc 的差距不能单独解释为 TATR 定位能力的差距。</p>
+<p>本实验属于预训练模型的推理与评估复现，未重新训练。结果来自测试子集，不能等同于全测试集结果。严格内容比较保留空格和换行。95% 置信区间、版本及详细指标见 JSON 文件。</p>
+<ul><li><a href="official-metrics.csv">官方基线逐表结果 CSV</a></li><li><a href="current-metrics.csv">当前系统逐表结果 CSV</a></li><li><a href="comparison-summary.json">完整统计与置信区间 JSON</a></li><li><a href="manifest.json">固定测试名单</a></li></ul>
+<p>参考：<a href="https://github.com/microsoft/table-transformer">Microsoft Table Transformer</a>，<a href="https://arxiv.org/pdf/2110.00061">PubTables-1M 论文</a>。</p></html>

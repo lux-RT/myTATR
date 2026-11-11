@@ -1,0 +1,13 @@
+{
+  "stage": "ocr",
+  "manifest_sha256": "0c6e76dd6f3d94f0d25d7c3be6acbb09c592ee86990d62823ccc8320f44eae1f",
+  "worker_sha256": "15a388876f7171828bf2cc70aa75b2c6a4554b172c091796250d5218fe683379",
+  "adapter_sha256": "a1dfef7cd8df0b7d08cc584833b7ef5e733af5a31a4eb2960fe089f1444465c3",
+  "scale": 2.0,
+  "threads": 3,
+  "models": {
+    "PP-OCRv6_det_small.onnx": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+    "PP-OCRv6_rec_small.onnx": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+  },
+  "source_sha256": "1d2d31b4d9382e92d2b646fd27d457377f09c25a51419d2174a262d6d36e363e"
+}

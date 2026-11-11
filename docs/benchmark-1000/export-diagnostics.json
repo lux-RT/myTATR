@@ -1,0 +1,1197 @@
+{
+  "official": {
+    "tables_with_overlapping_cells": 25,
+    "tables_with_duplicate_anchors": 11,
+    "cases": [
+      {
+        "id": "PMC1087851_table_2",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            0,
+            5
+          ]
+        ],
+        "grits_top": 0.9924242424242424
+      },
+      {
+        "id": "PMC1925111_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            21,
+            0
+          ]
+        ],
+        "grits_top": 0.9532478402534907
+      },
+      {
+        "id": "PMC2367434_table_0",
+        "duplicate_anchor_positions": [
+          [
+            3,
+            0
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            3,
+            0
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            20,
+            3
+          ]
+        ],
+        "grits_top": 0.9049456202233982
+      },
+      {
+        "id": "PMC2581733_table_0",
+        "duplicate_anchor_positions": [
+          [
+            13,
+            0
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            13,
+            0
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            11,
+            3
+          ]
+        ],
+        "grits_top": 0.6064306064306064
+      },
+      {
+        "id": "PMC2822747_table_0",
+        "duplicate_anchor_positions": [
+          [
+            13,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            13,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "grits_top": 0.5919270833333332
+      },
+      {
+        "id": "PMC2865542_table_1",
+        "duplicate_anchor_positions": [
+          [
+            0,
+            4
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "grits_top": 0.9229166666666668
+      },
+      {
+        "id": "PMC3176247_table_0",
+        "duplicate_anchor_positions": [
+          [
+            0,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "grits_top": 0.9592391304347826
+      },
+      {
+        "id": "PMC3240935_table_0",
+        "duplicate_anchor_positions": [
+          [
+            10,
+            6
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        "grits_top": 0.9732142857142857
+      },
+      {
+        "id": "PMC3392739_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            0,
+            3
+          ]
+        ],
+        "grits_top": 0.993421052631579
+      },
+      {
+        "id": "PMC3439312_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            17,
+            2
+          ]
+        ],
+        "grits_top": 0.8981481481481484
+      },
+      {
+        "id": "PMC4359163_table_2",
+        "duplicate_anchor_positions": [
+          [
+            1,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            1,
+            0
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        "grits_top": 0.8223311546840958
+      },
+      {
+        "id": "PMC4752460_table_2",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            13,
+            0
+          ]
+        ],
+        "grits_top": 0.9736111111111111
+      },
+      {
+        "id": "PMC4792541_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            6,
+            0
+          ]
+        ],
+        "grits_top": 0.3657142857142857
+      },
+      {
+        "id": "PMC4822318_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            3,
+            3
+          ]
+        ],
+        "grits_top": 0.964453125
+      },
+      {
+        "id": "PMC4824796_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            3,
+            7
+          ]
+        ],
+        "grits_top": 0.9195156695156695
+      },
+      {
+        "id": "PMC4943945_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            19,
+            0
+          ],
+          [
+            20,
+            0
+          ]
+        ],
+        "grits_top": 0.923778838725519
+      },
+      {
+        "id": "PMC4946234_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            4,
+            0
+          ]
+        ],
+        "grits_top": 0.954861111111111
+      },
+      {
+        "id": "PMC5676356_table_0",
+        "duplicate_anchor_positions": [
+          [
+            3,
+            1
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "grits_top": 0.96875
+      },
+      {
+        "id": "PMC5720695_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            19,
+            0
+          ],
+          [
+            17,
+            0
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "grits_top": 0.9287878787878789
+      },
+      {
+        "id": "PMC5766623_table_2",
+        "duplicate_anchor_positions": [
+          [
+            7,
+            0
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            7,
+            0
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        "grits_top": 0.9074052478134109
+      },
+      {
+        "id": "PMC5794904_table_3",
+        "duplicate_anchor_positions": [
+          [
+            0,
+            1
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "grits_top": 0.8881944444444445
+      },
+      {
+        "id": "PMC5807742_table_4",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            20,
+            0
+          ],
+          [
+            20,
+            1
+          ],
+          [
+            20,
+            2
+          ],
+          [
+            20,
+            3
+          ],
+          [
+            20,
+            4
+          ],
+          [
+            20,
+            5
+          ],
+          [
+            20,
+            6
+          ],
+          [
+            21,
+            0
+          ],
+          [
+            21,
+            1
+          ],
+          [
+            21,
+            2
+          ],
+          [
+            21,
+            3
+          ],
+          [
+            21,
+            4
+          ],
+          [
+            21,
+            5
+          ],
+          [
+            21,
+            6
+          ]
+        ],
+        "grits_top": 0.7634834741977602
+      },
+      {
+        "id": "PMC5818497_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            19,
+            0
+          ],
+          [
+            32,
+            4
+          ],
+          [
+            33,
+            4
+          ],
+          [
+            34,
+            4
+          ],
+          [
+            35,
+            4
+          ],
+          [
+            36,
+            4
+          ],
+          [
+            37,
+            4
+          ],
+          [
+            31,
+            4
+          ],
+          [
+            39,
+            4
+          ],
+          [
+            40,
+            4
+          ],
+          [
+            47,
+            4
+          ]
+        ],
+        "grits_top": 0.9049096401381065
+      },
+      {
+        "id": "PMC5946541_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            6,
+            2
+          ]
+        ],
+        "grits_top": 0.8196360153256705
+      },
+      {
+        "id": "PMC6005876_table_2",
+        "duplicate_anchor_positions": [
+          [
+            1,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            1,
+            0
+          ]
+        ],
+        "grits_top": 0.9153439153439153
+      }
+    ]
+  },
+  "current": {
+    "tables_with_overlapping_cells": 27,
+    "tables_with_duplicate_anchors": 16,
+    "cases": [
+      {
+        "id": "PMC1087851_table_2",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            0,
+            5
+          ]
+        ],
+        "grits_top": 0.9787878787878787
+      },
+      {
+        "id": "PMC2367434_table_0",
+        "duplicate_anchor_positions": [
+          [
+            3,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            3,
+            0
+          ],
+          [
+            20,
+            3
+          ]
+        ],
+        "grits_top": 0.8708847736625516
+      },
+      {
+        "id": "PMC2581733_table_0",
+        "duplicate_anchor_positions": [
+          [
+            4,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            13,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            13,
+            0
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            13,
+            5
+          ]
+        ],
+        "grits_top": 0.5878442545109214
+      },
+      {
+        "id": "PMC2822747_table_0",
+        "duplicate_anchor_positions": [
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            13,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            13,
+            0
+          ]
+        ],
+        "grits_top": 0.5919270833333332
+      },
+      {
+        "id": "PMC2865542_table_1",
+        "duplicate_anchor_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "grits_top": 0.9541666666666668
+      },
+      {
+        "id": "PMC3176247_table_0",
+        "duplicate_anchor_positions": [
+          [
+            0,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "grits_top": 0.9592391304347826
+      },
+      {
+        "id": "PMC3240935_table_0",
+        "duplicate_anchor_positions": [
+          [
+            10,
+            6
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        "grits_top": 0.9732142857142857
+      },
+      {
+        "id": "PMC3293037_table_0",
+        "duplicate_anchor_positions": [
+          [
+            11,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            11,
+            0
+          ]
+        ],
+        "grits_top": 0.9541062801932368
+      },
+      {
+        "id": "PMC3392739_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            0,
+            3
+          ]
+        ],
+        "grits_top": 0.982456140350877
+      },
+      {
+        "id": "PMC4359163_table_2",
+        "duplicate_anchor_positions": [
+          [
+            1,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            1,
+            0
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        "grits_top": 0.8223311546840958
+      },
+      {
+        "id": "PMC4444007_table_0",
+        "duplicate_anchor_positions": [
+          [
+            9,
+            1
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ]
+        ],
+        "grits_top": 0.889545291800931
+      },
+      {
+        "id": "PMC4722106_table_3",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            4,
+            0
+          ]
+        ],
+        "grits_top": 0.9831349206349207
+      },
+      {
+        "id": "PMC4752460_table_2",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            23,
+            0
+          ],
+          [
+            27,
+            0
+          ]
+        ],
+        "grits_top": 0.9596153846153845
+      },
+      {
+        "id": "PMC4792541_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        "grits_top": 0.3657142857142857
+      },
+      {
+        "id": "PMC4822318_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            3,
+            3
+          ]
+        ],
+        "grits_top": 0.9484310699588477
+      },
+      {
+        "id": "PMC4824796_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            3,
+            7
+          ]
+        ],
+        "grits_top": 0.918091168091168
+      },
+      {
+        "id": "PMC5119986_table_2",
+        "duplicate_anchor_positions": [
+          [
+            19,
+            1
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            19,
+            1
+          ],
+          [
+            19,
+            2
+          ]
+        ],
+        "grits_top": 0.8648648648648647
+      },
+      {
+        "id": "PMC5159901_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "grits_top": 0.9635416666666666
+      },
+      {
+        "id": "PMC5676356_table_0",
+        "duplicate_anchor_positions": [
+          [
+            3,
+            1
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "grits_top": 0.96875
+      },
+      {
+        "id": "PMC5720695_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            18,
+            1
+          ]
+        ],
+        "grits_top": 0.8874368686868682
+      },
+      {
+        "id": "PMC5766623_table_2",
+        "duplicate_anchor_positions": [
+          [
+            7,
+            0
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            7,
+            0
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        "grits_top": 0.9074052478134109
+      },
+      {
+        "id": "PMC5794904_table_3",
+        "duplicate_anchor_positions": [
+          [
+            0,
+            1
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "grits_top": 0.8881944444444445
+      },
+      {
+        "id": "PMC5807742_table_4",
+        "duplicate_anchor_positions": [
+          [
+            30,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            30,
+            0
+          ]
+        ],
+        "grits_top": 0.6821168180190736
+      },
+      {
+        "id": "PMC5818497_table_1",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            10,
+            0
+          ],
+          [
+            19,
+            0
+          ],
+          [
+            31,
+            4
+          ],
+          [
+            32,
+            4
+          ],
+          [
+            33,
+            4
+          ],
+          [
+            34,
+            4
+          ],
+          [
+            35,
+            4
+          ],
+          [
+            36,
+            4
+          ],
+          [
+            37,
+            4
+          ],
+          [
+            38,
+            4
+          ],
+          [
+            39,
+            4
+          ],
+          [
+            40,
+            4
+          ]
+        ],
+        "grits_top": 0.9103751075750814
+      },
+      {
+        "id": "PMC6005876_table_2",
+        "duplicate_anchor_positions": [
+          [
+            1,
+            0
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            23,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            1,
+            0
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            23,
+            0
+          ],
+          [
+            24,
+            0
+          ]
+        ],
+        "grits_top": 0.7910052910052912
+      },
+      {
+        "id": "PMC6097553_table_0",
+        "duplicate_anchor_positions": [
+          [
+            11,
+            0
+          ]
+        ],
+        "overlapping_grid_positions": [
+          [
+            11,
+            0
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            11,
+            3
+          ]
+        ],
+        "grits_top": 0.9055555555555556
+      },
+      {
+        "id": "PMC6441209_table_0",
+        "duplicate_anchor_positions": [],
+        "overlapping_grid_positions": [
+          [
+            12,
+            1
+          ]
+        ],
+        "grits_top": 0.9055759055759054
+      }
+    ]
+  }
+}

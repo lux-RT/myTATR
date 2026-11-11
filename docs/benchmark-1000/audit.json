@@ -1,0 +1,55 @@
+{
+  "verified_utc": "2026-11-11T05:58:39.217061+00:00",
+  "status": "passed_with_documented_export_ambiguities",
+  "sample_count": 1000,
+  "source_articles": 987,
+  "categories": {
+    "simple": 482,
+    "complex": 518
+  },
+  "checks": {
+    "official": {
+      "metric_records": 1000,
+      "verified_html_grid_projections": 1000,
+      "verified_csv_grid_projections": 1000,
+      "runtime_failures": 0,
+      "exact_tables": 821,
+      "tables_with_overlapping_cells": 25,
+      "tables_with_duplicate_anchors": 11
+    },
+    "current": {
+      "metric_records": 1000,
+      "verified_html_grid_projections": 1000,
+      "verified_csv_grid_projections": 1000,
+      "runtime_failures": 0,
+      "exact_tables": 73,
+      "tables_with_overlapping_cells": 27,
+      "tables_with_duplicate_anchors": 16
+    }
+  },
+  "checks_description": [
+    "Image and XML hashes match the frozen pre-inference manifest.",
+    "All paired evaluation fingerprints match current inputs and configuration.",
+    "Independent CSV means match JSON summary within 1e-12.",
+    "HTML and CSV match the existing grid projection rules; overlapping raw cells are separately documented and fully retained in JSON.",
+    "All 1000 selected IDs appear once in both pipelines; zero runtime failures."
+  ],
+  "published_file_sha256": {
+    "comparison-summary.json": "1d9bd93d42d92344e6325f1f63ca832151d36cfb2dc23bf7461ffcaa7bbe48b4",
+    "current-metrics.csv": "8c3d5375808a3cd392227554f03d42fcaa67fdf0ec1695ae6f8562f705b08533",
+    "current-summary.json": "80a1097904359de41814acb6673c4088a595ecc1b7fbb899795dd82ab57cbfc7",
+    "environment.json": "c7c91a431d5177a39d34ae517652f70e871b491a81b63dceaba3a47078034911",
+    "evaluation-config.json": "e50deda7b9cc53ca7c3628f554741a1344d15b1c98cf282467eb0940b2b46f81",
+    "export-diagnostics.json": "e3412b2cf9e0f7b642740249abd0d3cd8033ae92cdbd0602c501440fb4b7fb26",
+    "illustrative-case.json": "54cd07fe948988a67238b23ef4d4ecb41a29de1520d69f56d5f4a93115131661",
+    "manifest.json": "3ed0eb84cbf57f3e764e92479158d3d29b78955c4499a4287128587de6b62598",
+    "ocr-config.json": "b1bd471db9e0f2a5ae8928f83089fb2fb4a8d68eaf5c1f47b3d9175f1934ef2a",
+    "ocr-metadata.json": "ee269011d2ac3cb78a1976d6d0c8788cc0e82acd6b14f865551046769ff6d3d3",
+    "official-metrics.csv": "2d5b5cbda33c1fb164f12cea18ef7d1eb516cec21ef6e349d574516d15883fdc",
+    "official-summary.json": "6ec677da3af3a2e9d7040ca711b17c86f3e48f2f4e161249533b241e63c50f64",
+    "predict-config.json": "ca4dc327238eca4d21485160eb2d2c6ad3d545cb3c78b9d6ce8bcb4a598a747e",
+    "raw-stage-runner.py.txt": "1d2d31b4d9382e92d2b646fd27d457377f09c25a51419d2174a262d6d36e363e",
+    "words-provenance.json": "3c111deadafd8f445b21280300a7c5bb577ae446cd513bdaa45e539f0c10b23d",
+    "测试结果.html": "0e5c32a1355eeea2ddecb8194041672030d21ae8c17b4af89672b7b44264b70a"
+  }
+}

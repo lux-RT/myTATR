@@ -1,0 +1,149 @@
+{
+  "id": "PMC1431516_table_0",
+  "purpose": "Illustration only; not a separate metric or a tuning example",
+  "official_metrics": {
+    "acc_con": 1.0,
+    "grits_top": 1.0,
+    "grits_con": 1.0,
+    "grits_loc": 1.0
+  },
+  "current_metrics": {
+    "acc_con": 0.0,
+    "grits_top": 1.0,
+    "grits_con": 0.9685197977496083,
+    "grits_loc": 0.5685104946426593
+  },
+  "cell_text_differences": [
+    {
+      "row_nums": [
+        0
+      ],
+      "column_nums": [
+        1
+      ],
+      "official_text": "Aboriginal Youth (N = 80, 27%)",
+      "ocr_text": "Aboriginal Youth\n(N = 80.27%)"
+    },
+    {
+      "row_nums": [
+        0
+      ],
+      "column_nums": [
+        2
+      ],
+      "official_text": "Non-Aboriginal Youth (N = 211, 73%)",
+      "ocr_text": "Non-Aboriginal Youth\n(N = 211, 73%)"
+    },
+    {
+      "row_nums": [
+        1
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "-------",
+      "ocr_text": ""
+    },
+    {
+      "row_nums": [
+        2
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "4.15 [1.86–9.22]",
+      "ocr_text": "4.15 [1.86-9.22]"
+    },
+    {
+      "row_nums": [
+        4
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "2.22 [1.31–3.79]",
+      "ocr_text": "2.22 [1.31-3.79]"
+    },
+    {
+      "row_nums": [
+        6
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "2.90 [1.70–4.94]",
+      "ocr_text": "2.90 [1.70-4.94]"
+    },
+    {
+      "row_nums": [
+        9
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "0.53 [0.28–1.00]",
+      "ocr_text": "0.53 [0.28-1.00]"
+    },
+    {
+      "row_nums": [
+        10
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "1.73 [1.03–2.93]",
+      "ocr_text": "1.73 [1.03-2.93]"
+    },
+    {
+      "row_nums": [
+        11
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "1.03 [0.61–1.74]",
+      "ocr_text": "1.03 [0.61-1.74]"
+    },
+    {
+      "row_nums": [
+        12
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "0.70 [0.42–1.17]",
+      "ocr_text": "0.70 [0.42-1.17]"
+    },
+    {
+      "row_nums": [
+        13
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "2.00 [1.17–3.42]",
+      "ocr_text": "2.00 [1.17-3.42]"
+    },
+    {
+      "row_nums": [
+        15
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "0.68 [0.41–1.15]",
+      "ocr_text": "0.68 [0.41-1.15]"
+    },
+    {
+      "row_nums": [
+        16
+      ],
+      "column_nums": [
+        3
+      ],
+      "official_text": "-----------",
+      "ocr_text": ""
+    }
+  ],
+  "interpretation": "Structure matches in this example; OCR still changes symbols, punctuation and line breaks. Official baseline content is exact for this table."
+}

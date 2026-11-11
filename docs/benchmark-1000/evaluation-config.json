@@ -1,0 +1,34 @@
+{
+  "stage": "evaluation",
+  "manifest_sha256": "0c6e76dd6f3d94f0d25d7c3be6acbb09c592ee86990d62823ccc8320f44eae1f",
+  "source_sha256": "5053802b8e6f4511571a7f1f0dc33419ea624df1a3ad88e9742fe453eb0dd5d0",
+  "helper_sha256": "07841e0d915e7d0212583d48858f3a49b6b3015844705f4627947a5617775fc9",
+  "fusion_sha256": "8e01edf530f89c2dd2925a10deb8ef0e9d71a041b3f53ae3a702bf2d874b1238",
+  "official_sources": {
+    "repository": "https://github.com/microsoft/table-transformer",
+    "commit": "16d124f616109746b7785f03085100f1f6247575",
+    "files": {
+      "postprocess.py": {
+        "source": "https://raw.githubusercontent.com/microsoft/table-transformer/16d124f616109746b7785f03085100f1f6247575/src/postprocess.py",
+        "sha256": "a7b3bdf0b0f9ea4b2ccd04bb0acca4bb05b1809d120edf556526a6d976d027db"
+      },
+      "LICENSE": {
+        "source": "https://raw.githubusercontent.com/microsoft/table-transformer/16d124f616109746b7785f03085100f1f6247575/LICENSE",
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+      },
+      "eval.py": {
+        "source": "https://raw.githubusercontent.com/microsoft/table-transformer/16d124f616109746b7785f03085100f1f6247575/src/eval.py",
+        "sha256": "c806b289134315bbad876b51c3f577c0a84dd29d0102a2691d0d62531fcf6196"
+      },
+      "grits.py": {
+        "source": "https://raw.githubusercontent.com/microsoft/table-transformer/16d124f616109746b7785f03085100f1f6247575/src/grits.py",
+        "sha256": "75c13031657252c251f5d0b483aca2601e229a06d46e60d0aa3c739418f543d7"
+      }
+    }
+  },
+  "predict_config_sha256": "ca4dc327238eca4d21485160eb2d2c6ad3d545cb3c78b9d6ce8bcb4a598a747e",
+  "ocr_config_sha256": "b1bd471db9e0f2a5ae8928f83089fb2fb4a8d68eaf5c1f47b3d9175f1934ef2a",
+  "word_provenance_sha256": "3c111deadafd8f445b21280300a7c5bb577ae446cd513bdaa45e539f0c10b23d",
+  "content_normalization": "none; exact source text including whitespace",
+  "iou_compatibility": "cast numpy scalar coordinates to Python float before unmodified upstream IoU"
+}

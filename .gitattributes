@@ -3,4 +3,10 @@
 # Preserve original CSV line endings and exact third-party hashes on Windows.
 *.csv -text -whitespace
 third_party/tatr/postprocess.py -text -whitespace
+third_party/tatr/eval.py -text -whitespace
+third_party/tatr/grits.py -text -whitespace
+docs/benchmark-1000/raw-stage-runner.py.txt -text -whitespace
+# Archived run artifacts retain the exact CRLF bytes covered by their hashes.
+docs/benchmark-1000/*.json -text -whitespace
+docs/benchmark-1000/*.html -text -whitespace
 third_party/tatr/LICENSE -text

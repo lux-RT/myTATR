@@ -9,6 +9,14 @@
     "LICENSE": {
       "source": "https://raw.githubusercontent.com/microsoft/table-transformer/16d124f616109746b7785f03085100f1f6247575/LICENSE",
       "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    "eval.py": {
+      "source": "https://raw.githubusercontent.com/microsoft/table-transformer/16d124f616109746b7785f03085100f1f6247575/src/eval.py",
+      "sha256": "c806b289134315bbad876b51c3f577c0a84dd29d0102a2691d0d62531fcf6196"
+    },
+    "grits.py": {
+      "source": "https://raw.githubusercontent.com/microsoft/table-transformer/16d124f616109746b7785f03085100f1f6247575/src/grits.py",
+      "sha256": "75c13031657252c251f5d0b483aca2601e229a06d46e60d0aa3c739418f543d7"
     }
   }
 }

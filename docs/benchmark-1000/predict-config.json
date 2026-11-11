@@ -1,0 +1,19 @@
+{
+  "stage": "predict",
+  "manifest_sha256": "0c6e76dd6f3d94f0d25d7c3be6acbb09c592ee86990d62823ccc8320f44eae1f",
+  "model_id": "microsoft/table-transformer-structure-recognition",
+  "model_revision": "f4d4bdc85c3fe4b1fa49658882a5d38bbdd0f343",
+  "files": {
+    "config.json": "cc00bc06445308c84b9be145174a0eadc6b44523d721d910e94efaf52436096e",
+    "model.safetensors": "6a3494f8d341fc16700d0dfd7e321d3c7344e5496ba5d7b4b0dd3e95e89d1506",
+    "preprocessor_config.json": "ea8e4375cbaff4fdafe42b22590e72ff7eb89b6d235f59cdeb746d5de7987f3e"
+  },
+  "torch": "2.8.0+cpu",
+  "transformers": "4.57.1",
+  "pillow": "11.3.0",
+  "threads": 3,
+  "threshold": 0.5,
+  "source_sha256": "1d2d31b4d9382e92d2b646fd27d457377f09c25a51419d2174a262d6d36e363e",
+  "official_resize": "PIL.Image.resize(round(width*1000/max_edge), round(height*1000/max_edge)); default resample",
+  "current_resize": "existing local AutoImageProcessor settings"
+}

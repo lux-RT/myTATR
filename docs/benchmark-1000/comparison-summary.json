@@ -1,0 +1,208 @@
+{
+  "sample_count": 1000,
+  "seed": 42,
+  "population": 93834,
+  "manifest_sha256": "0c6e76dd6f3d94f0d25d7c3be6acbb09c592ee86990d62823ccc8320f44eae1f",
+  "created_utc": "2026-11-11T05:52:00.720838+00:00",
+  "evaluation": "strict official GriTS and AccCon; fixed threshold 0.5; no test-set tuning",
+  "confidence_intervals": "2000 bootstrap replicates, clustering by source article, seed 42",
+  "limitations": [
+    "Microsoft Hugging Face checkpoint; no retraining or original DETR runtime numerical equivalence claim.",
+    "The official protocol and current system differ in preprocessing, token source and postprocessing; the gap is not an isolated OCR ablation.",
+    "A 1000-table test subset, not the full test set; table crops, not full-page detection.",
+    "Exact content scoring preserves whitespace; runtime reflects this CPU and concurrent stages, not paper hardware."
+  ],
+  "paper_reference": {
+    "source": "https://arxiv.org/pdf/2110.00061#page=8",
+    "row": "Table 4, Canonical / DETR / All",
+    "acc_con": 0.8138,
+    "grits_top": 0.9845,
+    "grits_con": 0.9846,
+    "grits_loc": 0.9781,
+    "scope": "Full official test set; different published experimental version, contextual reference only"
+  },
+  "official": {
+    "all": {
+      "num_tables": 1000,
+      "failures": 0,
+      "acc_con": 0.821,
+      "grits_top": 0.9820314963986778,
+      "grits_con": 0.9817308459397767,
+      "grits_loc": 0.9737970293615974,
+      "exact_tables": 821,
+      "ci95_article_bootstrap": {
+        "acc_con": [
+          0.7974177513889797,
+          0.8440666727638558
+        ],
+        "grits_top": [
+          0.9772552057250184,
+          0.9859959958719511
+        ],
+        "grits_con": [
+          0.9769836399415931,
+          0.9858285150046275
+        ],
+        "grits_loc": [
+          0.9678411132571608,
+          0.9791365634051921
+        ]
+      },
+      "num_articles": 987
+    },
+    "simple": {
+      "num_tables": 482,
+      "failures": 0,
+      "acc_con": 0.941908713692946,
+      "grits_top": 0.9904227089459752,
+      "grits_con": 0.9887752775608013,
+      "grits_loc": 0.9848839053935626,
+      "exact_tables": 454,
+      "ci95_article_bootstrap": {
+        "acc_con": [
+          0.9192546583850931,
+          0.9626556016597511
+        ],
+        "grits_top": [
+          0.9840799793426822,
+          0.9952839740929931
+        ],
+        "grits_con": [
+          0.9816328630795113,
+          0.9944308261249183
+        ],
+        "grits_loc": [
+          0.9764832525223454,
+          0.9920643086000602
+        ]
+      },
+      "num_articles": 473
+    },
+    "complex": {
+      "num_tables": 518,
+      "failures": 0,
+      "acc_con": 0.7084942084942085,
+      "grits_top": 0.9742234569241655,
+      "grits_con": 0.9751759887171245,
+      "grits_loc": 0.9634806698106188,
+      "exact_tables": 367,
+      "ci95_article_bootstrap": {
+        "acc_con": [
+          0.6705261740145461,
+          0.746652654162251
+        ],
+        "grits_top": [
+          0.9676384742309568,
+          0.980140110537825
+        ],
+        "grits_con": [
+          0.9689865668229586,
+          0.9807793390167383
+        ],
+        "grits_loc": [
+          0.9553978820616028,
+          0.971225041408764
+        ]
+      },
+      "num_articles": 516
+    },
+    "mean_seconds": {
+      "structure": 0.7597324876985513,
+      "postprocess": 0.5142729514997918,
+      "ocr": 0.0,
+      "total": 1.274005439198343
+    }
+  },
+  "current": {
+    "all": {
+      "num_tables": 1000,
+      "failures": 0,
+      "acc_con": 0.073,
+      "grits_top": 0.9807130181855056,
+      "grits_con": 0.9372982173957619,
+      "grits_loc": 0.5064539257410593,
+      "exact_tables": 73,
+      "ci95_article_bootstrap": {
+        "acc_con": [
+          0.057942057942057944,
+          0.0899100899100899
+        ],
+        "grits_top": [
+          0.9759632832847626,
+          0.9846137007637019
+        ],
+        "grits_con": [
+          0.9308112141162981,
+          0.9432031948746804
+        ],
+        "grits_loc": [
+          0.49733771048190617,
+          0.5155021519206626
+        ]
+      },
+      "num_articles": 987
+    },
+    "simple": {
+      "num_tables": 482,
+      "failures": 0,
+      "acc_con": 0.1016597510373444,
+      "grits_top": 0.9897364583290619,
+      "grits_con": 0.944105409569892,
+      "grits_loc": 0.516160253274417,
+      "exact_tables": 49,
+      "ci95_article_bootstrap": {
+        "acc_con": [
+          0.07566376243749033,
+          0.1297071129707113
+        ],
+        "grits_top": [
+          0.9835977423233885,
+          0.9948077387572297
+        ],
+        "grits_con": [
+          0.9353570652409624,
+          0.9526579618162719
+        ],
+        "grits_loc": [
+          0.5021118385597345,
+          0.5300726729498817
+        ]
+      },
+      "num_articles": 473
+    },
+    "complex": {
+      "num_tables": 518,
+      "failures": 0,
+      "acc_con": 0.04633204633204633,
+      "grits_top": 0.9723166897121578,
+      "grits_con": 0.9309641119364332,
+      "grits_loc": 0.49742216923318494,
+      "exact_tables": 24,
+      "ci95_article_bootstrap": {
+        "acc_con": [
+          0.028900344597598934,
+          0.06395348837209303
+        ],
+        "grits_top": [
+          0.9656045533859244,
+          0.9783903764111235
+        ],
+        "grits_con": [
+          0.9223635895179971,
+          0.9390111938023338
+        ],
+        "grits_loc": [
+          0.4865572349528124,
+          0.5083843976491871
+        ]
+      },
+      "num_articles": 516
+    },
+    "mean_seconds": {
+      "structure": 0.7151866645994596,
+      "postprocess": 0.31053903220407664,
+      "ocr": 2.5603968,
+      "total": 3.586122496803536
+    }
+  }
+}
