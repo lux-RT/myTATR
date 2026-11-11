@@ -1,0 +1,12 @@
+1000-table paired evaluation exports, completed 2026-11-11.
+Dataset: PubTables-1M, official test split; 1000 tables sampled without replacement with seed 42 from 93,834 IDs.
+Dataset source: https://huggingface.co/datasets/bsmock/pubtables-1m
+Dataset revision: 35b1c097807e0b07ec5313879b85956b7b3890db
+Dataset license: CDLA-Permissive-2.0; complete text in DATA_LICENSE.txt.
+Official project and evaluation code: https://github.com/microsoft/table-transformer
+Official code revision: 16d124f616109746b7785f03085100f1f6247575
+Model: https://huggingface.co/microsoft/table-transformer-structure-recognition
+Experiment implementation, configuration and provenance: https://github.com/lux-RT/myTATR/tree/a7e8807f6d8e9d111c8cd0bf74c35cfde2775f51/docs/benchmark-1000
+These archives contain per-table HTML/CSV/JSON predictions, metrics and a sanitized fixed manifest. Original images, model weights and raw inference caches are not included.
+The official baseline uses official word information; the current system uses PP-OCRv6 small. Preprocessing and postprocessing also differ, so this is not an OCR-only ablation.
+Overlapping predicted cells may be lossy in HTML/CSV; the JSON retains all predicted cells. Scores were computed before export and have not been altered.

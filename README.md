@@ -83,7 +83,7 @@ powershell -ExecutionPolicy Bypass -File scripts/setup.ps1
 
 `run_benchmark.py` 使用同一份随机测试名单分别评估官方评价条件基线和当前 OCR 系统，计算 AccCon、GriTS Top/Con/Loc。默认十图入口保持不变。
 
-运行方式、数据准备、恢复规则及评价条件见 [千图测试运行说明](docs/千图测试运行说明.md)。原始预测、逐表结果与 HTML 输出保存在忽略上传的 `outputs/benchmark-1000-seed42/`，不能把导出成功率当成表格内容准确率。
+运行方式、数据准备、恢复规则及评价条件见 [千图测试运行说明](docs/千图测试运行说明.md)。本地运行产物保存在忽略上传的 `outputs/benchmark-1000-seed42/`；两套完整的逐表 HTML、CSV、JSON 已打包上传，可从 [千图结果下载](docs/benchmark-1000/full-results/README.md) 获取。不能把导出成功率当成表格内容准确率。
 
 2026-11-11 已完成同一批 1000 张图片的两套评估，均无运行失败：基线的 GriTS Top / Con 为 98.20% / 98.17%，AccCon 为 82.10%；当前 OCR 系统分别为 98.07% / 93.73% 和 7.30%。完整分组结果、置信区间和解释见 [千图双版本测试报告](docs/benchmark-1000/README.md)。
 
