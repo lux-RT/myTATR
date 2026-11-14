@@ -230,6 +230,35 @@ def evaluation_inputs_ready(sample,out):
     return all((Path(out)/folder/(sample['id']+'.json')).is_file() for folder in ['predictions','ocr'])
 
 
+def render_saved_sample(sample,out):
+    """Render saved exports only; no model execution or metric/cache writes."""
+    from PIL import Image
+    from tatr_ocr.visualization import draw_cells
+    out=Path(out);name=sample['id']
+    records={}
+    for mode in ['official','current']:
+        path=out/mode/(name+'.json')
+        if not path.is_file():raise FileNotFoundError(f'Missing saved export: {path}; run evaluate first')
+        records[mode]=read_json(path)
+        if records[mode]['id']!=name:raise ValueError(f'Export ID mismatch: {path}')
+    words_data=read_json(out/'words'/(name+'.json'))
+    ocr_data=read_json(out/'ocr'/(name+'.json'))
+    # Benchmark prediction uses raw RGB orientation, not EXIF-transposed input.
+    with Image.open(sample['image']) as source:
+        for mode,record in records.items():
+            tokens=words_data if mode=='official' else ocr_data.get('tokens',[])
+            draw_cells(source,record['cells'],tokens,out/mode/(name+'_overlay.png'),error=record.get('error'))
+
+
+def render(args):
+    manifest=verify_manifest(args.out)
+    for index,sample in enumerate(manifest['samples'],1):
+        render_saved_sample(sample,args.out)
+        if index%25==0 or index==manifest['count']:
+            emit(f'PNG overlays {index}/{manifest["count"]} per system')
+    emit(f'PNG overlays saved in {args.out / "official"} and {args.out / "current"}')
+
+
 def evaluate_one(sample,out):
     from tatr_ocr.benchmark import ground_truth,official_cells,current_cells,score_cells,official_export_table
     from tatr_ocr.fusion import fuse
@@ -270,6 +299,7 @@ def evaluate_one(sample,out):
             (folder/(name+'.html')).write_text(html_document(name,table),encoding='utf-8')
             write_csv(folder/(name+'.csv'),table)
     if evaluation_fingerprint(sample,out)!=fingerprint:raise ValueError('Inputs changed during evaluation')
+    render_saved_sample(sample,out)
     write_json(out/'evaluated'/(name+'.json'),result)
     return name
 
@@ -365,7 +395,7 @@ def report(args):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('stage',choices=['prepare','words','predict','ocr','evaluate','report'])
+    parser.add_argument('stage',choices=['prepare','words','predict','ocr','evaluate','report','render'])
     parser.add_argument('--data',type=Path,default=DEFAULT_DATA)
     parser.add_argument('--out',type=Path,default=DEFAULT_OUT)
     parser.add_argument('--count',type=int,default=1000)

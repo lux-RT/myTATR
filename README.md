@@ -85,6 +85,8 @@ powershell -ExecutionPolicy Bypass -File scripts/setup.ps1
 
 运行方式、数据准备、恢复规则及评价条件见 [千图测试运行说明](docs/千图测试运行说明.md)。本地运行产物保存在忽略上传的 `outputs/benchmark-1000-seed42/`；两套完整的逐表 HTML、CSV、JSON 已打包上传，可从 [千图结果下载](docs/benchmark-1000/full-results/README.md) 获取。不能把导出成功率当成表格内容准确率。
 
+千图新评估会自动生成逐表 `_overlay.png` 结构图。已有本地结果可通过 `run_benchmark.py render --out outputs/benchmark-1000-seed42` 补图，无需重新推理或评分；启动 Python 的完整命令见上述运行说明。PNG 位于 `official/`、`current/`，蓝色为普通单元格、紫色为合并单元格、绿色为词框（基线官方词信息 / 当前 OCR）。原已发布 ZIP 保持历史内容，不含本次补图。
+
 2026-11-11 已完成同一批 1000 张图片的两套评估，均无运行失败：基线的 GriTS Top / Con 为 98.20% / 98.17%，AccCon 为 82.10%；当前 OCR 系统分别为 98.07% / 93.73% 和 7.30%。完整分组结果、置信区间和解释见 [千图双版本测试报告](docs/benchmark-1000/README.md)。
 
 ```powershell

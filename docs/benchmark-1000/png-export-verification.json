@@ -1,0 +1,16 @@
+{
+  "verified_date_local": "2026-11-14",
+  "source_experiment": "2026-11-11 paired 1000-table benchmark; seed 42",
+  "output_directory": "outputs/benchmark-1000-seed42",
+  "png_counts": {"official": 1000, "current": 1000},
+  "all_pngs_fully_decoded": true,
+  "all_png_sizes_match_original_images": true,
+  "existing_non_png_files_checked_by_sha256": 13110,
+  "all_existing_non_png_files_byte_identical": true,
+  "new_model_inference_performed": false,
+  "existing_metrics_recomputed": false,
+  "unit_tests_passed": 38,
+  "independent_code_review": "No important issues found",
+  "visual_inspection": "Both variants of PMC6002055_table_2: original coordinates, ordinary/merged cells and text boxes",
+  "published_zip_archives": "Historical archives and their hashes unchanged; new PNGs are local outputs"
+}
