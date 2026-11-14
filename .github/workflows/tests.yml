@@ -9,4 +9,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install PyMuPDF==1.26.6 numpy==2.5.2 Pillow==11.3.0
-      - run: python -m unittest discover -s tests -v
+      - run: python -X utf8 -m unittest discover -s tests -v
