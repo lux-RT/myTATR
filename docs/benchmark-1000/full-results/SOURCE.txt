@@ -1,3 +1,4 @@
+Legacy ZIP exports without PNG overlays; new PNG-inclusive Release packages carry their own updated SOURCE.txt.
 1000-table paired evaluation exports, completed 2026-11-11.
 Dataset: PubTables-1M, official test split; 1000 tables sampled without replacement with seed 42 from 93,834 IDs.
 Dataset source: https://huggingface.co/datasets/bsmock/pubtables-1m

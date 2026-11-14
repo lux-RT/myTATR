@@ -1,0 +1,2 @@
+903f254b810fed4b3a7641fad80b34309098d2d107c0733e40aec9993d5e602b  benchmark-1000-official-with-png.zip
+805fa36ccdbc4a109971b26475579c54ce2cac85308f7c3dc4742001f7857da3  benchmark-1000-ocr-with-png.zip

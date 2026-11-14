@@ -2,6 +2,25 @@
 
 这是 2026-11-11 完成的两套实验导出结果，来自同一批随机固定的 1000 张 PubTables-1M 测试表格，随机种子为 42。实验条件、指标解释和分组结果见 [千图双版本测试报告](../README.md)。
 
+## 新版：包含 PNG 结构图
+
+2026-11-14 已给两套结果各补齐 1000 张 PNG 并重新打包。因为每包超过 GitHub 普通 Git 文件的 100 MiB 限制，完整 ZIP 放在 [本仓库的 Releases](https://github.com/lux-RT/myTATR/releases/tag/benchmark-1000-png-20261114)，可直接下载：
+
+| 下载 | 文件大小（十进制 MB） | 内容 |
+|---|---:|---|
+| [官方基线 1000 张，含 PNG](https://github.com/lux-RT/myTATR/releases/download/benchmark-1000-png-20261114/benchmark-1000-official-with-png.zip) | 108.48 MB | `official/` 下各 1000 份 HTML、CSV、JSON、PNG |
+| [接入 OCR 1000 张，含 PNG](https://github.com/lux-RT/myTATR/releases/download/benchmark-1000-png-20261114/benchmark-1000-ocr-with-png.zip) | 107.15 MB | `current/` 下各 1000 份 HTML、CSV、JSON、PNG |
+
+每包共 **4007 个文件**：四种逐表结果各 1000 份，另含原有 7 个指标、名单、说明和许可文件。解压后，浏览器打开 HTML 看重建表格；打开 `<表格ID>_overlay.png` 看原图上的结构与文字框；CSV 可用 Excel 打开；JSON 保留完整坐标、文字和指标。
+
+蓝框表示普通单元格，紫框表示跨行或跨列单元格，绿框表示词框。官方基线绿框来自官方词信息，当前系统绿框来自 PP-OCRv6 small。PNG 直接使用原图及已保存坐标绘制，没有重新推理或改写指标；若结果有重叠单元格，图中如实保留。
+
+两个新版 ZIP 均通过 CRC、固定名单覆盖及 PNG 与本地文件逐字节对比；除更新 `说明.txt` 和 `SOURCE.txt` 外，旧包中的全部文件内容保持一致。校验见 [SHA256SUMS-with-png.txt](SHA256SUMS-with-png.txt)，验证摘要见 [png-package-verification.json](png-package-verification.json)。Releases 也附同一份校验文件，名为 `SHA256SUMS.txt`。
+
+新版包不含模型权重、推理缓存或单独的原始 JPG；PNG 本身以原表格图片为底图。许可和来源说明包含在每个 ZIP 中。两套包按相同表格 ID 命名，方便比较。
+
+## 历史版本：不含 PNG
+
 | 下载 | 文件大小 | 内容 |
 |---|---:|---|
 | [官方基线 1000 张结果](官方基线-1000张结果.zip) | 7.30 MB | `official/` 下各 1000 份 HTML、CSV、JSON |

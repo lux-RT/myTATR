@@ -393,11 +393,21 @@ def report(args):
     emit(json.dumps({mode:result[mode]['all'] for mode in ['official','current']},ensure_ascii=False))
 
 
+def run_all(args):
+    """Run both benchmark variants, failing immediately if any stage fails."""
+    emit(f'Paired benchmark output: {args.out}')
+    stages=['prepare','words','predict','ocr','evaluate','report']
+    for index,stage in enumerate(stages,1):
+        emit(f'[{index}/{len(stages)}] Starting {stage}')
+        globals()[stage](args)
+    emit(f'Completed both systems. Report: {args.out / "测试结果.html"}')
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('stage',choices=['prepare','words','predict','ocr','evaluate','report','render'])
+    parser.add_argument('stage',choices=['prepare','words','predict','ocr','evaluate','report','render','all'])
     parser.add_argument('--data',type=Path,default=DEFAULT_DATA)
-    parser.add_argument('--out',type=Path,default=DEFAULT_OUT)
+    parser.add_argument('--out',type=Path,help='Output directory; all defaults to a new timestamped run')
     parser.add_argument('--count',type=int,default=1000)
     parser.add_argument('--seed',type=int,default=42)
     parser.add_argument('--threads',type=int,default=3)
@@ -405,8 +415,10 @@ def main():
     parser.add_argument('--wait-for-inputs',action='store_true',help='Evaluate completed images while remaining OCR/predictions are still running')
     args=parser.parse_args()
     if not 1<=args.threads<=64 or not 1<=args.workers<=16:parser.error('Invalid worker/thread count')
+    if args.out is None:
+        args.out=ROOT/'outputs'/datetime.now().strftime('benchmark-%Y%m%d-%H%M%S-%f') if args.stage=='all' else DEFAULT_OUT
     args.out=args.out.resolve();args.out.mkdir(parents=True,exist_ok=True)
-    globals()[args.stage](args)
+    (run_all if args.stage=='all' else globals()[args.stage])(args)
 
 
 if __name__=='__main__':main()
