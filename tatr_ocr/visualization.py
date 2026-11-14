@@ -29,4 +29,3 @@ def draw_cells(image, cells, tokens, path, error=None):
     temporary = path.with_suffix(path.suffix + '.tmp')
     canvas.save(temporary, format='PNG')
     temporary.replace(path)
-
