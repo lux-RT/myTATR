@@ -1,0 +1,354 @@
+{
+  "source_experiment": "outputs/benchmark-1000-seed42",
+  "tables": 1000,
+  "exact_tables": 73,
+  "inexact_tables": 927,
+  "primary_counts": {
+    "content_only": 365,
+    "mixed_text": 272,
+    "structure_mismatch": 185,
+    "whitespace_only": 70,
+    "symbol_variant_only": 27,
+    "missing_only": 7,
+    "extra_only": 1
+  },
+  "topology_exact_tables": 815,
+  "aligned_grid_difference_counts": {
+    "whitespace": 3126,
+    "content": 4184,
+    "missing": 820,
+    "symbol_variant": 1762,
+    "extra": 3
+  },
+  "unique_owner_pair_difference_counts": {
+    "whitespace": 2750,
+    "content": 3827,
+    "missing": 814,
+    "symbol_variant": 1681,
+    "extra": 3
+  },
+  "legacy_subset_crosscheck": {
+    "tables": 798,
+    "grid_positions": 48583,
+    "mismatching_grid_positions": 9606,
+    "whitespace_only_mismatching_positions": 3095,
+    "missing_content_positions": 757,
+    "extra_content_positions": 1,
+    "equal_after_removing_all_whitespace_tables": 142,
+    "strict_exact_tables": 73
+  },
+  "common_nonwhitespace_edit_fragments": [
+    {
+      "reference": "–",
+      "prediction": "-",
+      "count": 1275
+    },
+    {
+      "reference": "−",
+      "prediction": "-",
+      "count": 579
+    },
+    {
+      "reference": ".",
+      "prediction": "",
+      "count": 315
+    },
+    {
+      "reference": ",",
+      "prediction": ".",
+      "count": 191
+    },
+    {
+      "reference": "a",
+      "prediction": "",
+      "count": 121
+    },
+    {
+      "reference": "c",
+      "prediction": "",
+      "count": 89
+    },
+    {
+      "reference": "′",
+      "prediction": "'",
+      "count": 82
+    },
+    {
+      "reference": "1",
+      "prediction": "I",
+      "count": 75
+    },
+    {
+      "reference": "6",
+      "prediction": "±",
+      "count": 73
+    },
+    {
+      "reference": "I",
+      "prediction": "l",
+      "count": 62
+    },
+    {
+      "reference": "5",
+      "prediction": "S",
+      "count": 59
+    },
+    {
+      "reference": "*",
+      "prediction": "",
+      "count": 58
+    },
+    {
+      "reference": "B",
+      "prediction": "8",
+      "count": 58
+    },
+    {
+      "reference": ")",
+      "prediction": "}",
+      "count": 54
+    },
+    {
+      "reference": "Å",
+      "prediction": "A",
+      "count": 54
+    },
+    {
+      "reference": "I",
+      "prediction": "1",
+      "count": 54
+    },
+    {
+      "reference": "i",
+      "prediction": "",
+      "count": 53
+    },
+    {
+      "reference": "1",
+      "prediction": "l",
+      "count": 51
+    },
+    {
+      "reference": "’",
+      "prediction": "'",
+      "count": 50
+    },
+    {
+      "reference": "···",
+      "prediction": "…",
+      "count": 44
+    },
+    {
+      "reference": "2",
+      "prediction": "-",
+      "count": 43
+    },
+    {
+      "reference": ",",
+      "prediction": "<",
+      "count": 40
+    },
+    {
+      "reference": "-",
+      "prediction": "",
+      "count": 39
+    },
+    {
+      "reference": "O",
+      "prediction": "0",
+      "count": 38
+    },
+    {
+      "reference": ";",
+      "prediction": ":",
+      "count": 35
+    },
+    {
+      "reference": ",",
+      "prediction": "",
+      "count": 35
+    },
+    {
+      "reference": "2",
+      "prediction": "²",
+      "count": 33
+    },
+    {
+      "reference": "1",
+      "prediction": "",
+      "count": 32
+    },
+    {
+      "reference": "µ",
+      "prediction": "μ",
+      "count": 32
+    },
+    {
+      "reference": "—",
+      "prediction": "-",
+      "count": 30
+    },
+    {
+      "reference": "+",
+      "prediction": "±",
+      "count": 29
+    },
+    {
+      "reference": ".",
+      "prediction": ",",
+      "count": 28
+    },
+    {
+      "reference": "",
+      "prediction": ".",
+      "count": 28
+    },
+    {
+      "reference": "(",
+      "prediction": "{",
+      "count": 28
+    },
+    {
+      "reference": "b",
+      "prediction": "",
+      "count": 27
+    },
+    {
+      "reference": ".",
+      "prediction": ">",
+      "count": 27
+    },
+    {
+      "reference": "",
+      "prediction": "6",
+      "count": 27
+    },
+    {
+      "reference": ":",
+      "prediction": "",
+      "count": 26
+    },
+    {
+      "reference": "···",
+      "prediction": "",
+      "count": 26
+    },
+    {
+      "reference": "X",
+      "prediction": "x",
+      "count": 26
+    },
+    {
+      "reference": "~",
+      "prediction": "-",
+      "count": 25
+    },
+    {
+      "reference": "9",
+      "prediction": "'",
+      "count": 25
+    },
+    {
+      "reference": "d",
+      "prediction": "",
+      "count": 23
+    },
+    {
+      "reference": "—",
+      "prediction": "",
+      "count": 22
+    },
+    {
+      "reference": "%",
+      "prediction": "96",
+      "count": 22
+    },
+    {
+      "reference": "l",
+      "prediction": "",
+      "count": 21
+    },
+    {
+      "reference": "s",
+      "prediction": "S",
+      "count": 21
+    },
+    {
+      "reference": "–",
+      "prediction": "一",
+      "count": 21
+    },
+    {
+      "reference": "α",
+      "prediction": "a",
+      "count": 20
+    },
+    {
+      "reference": "Δ",
+      "prediction": "∆",
+      "count": 18
+    }
+  ],
+  "source_files_hash_checked": 6003,
+  "source_files_unchanged": true,
+  "normalization_is_diagnostic_only": true,
+  "diagnostic_observations": {
+    "aligned_topology_tables": 815,
+    "aligned_inexact_tables": 742,
+    "secondary_table_counts_within_aligned_inexact": {
+      "has_whitespace": 498,
+      "has_ambiguous_ocr_boxes": 76,
+      "unique_reference_text_elsewhere_candidate": 4,
+      "full_text_elsewhere_and_reference_overlap_ge_50_percent": 1,
+      "has_content": 634,
+      "digits_changed": 376,
+      "letters_changed": 509,
+      "punctuation_changed": 571,
+      "has_missing": 128,
+      "missing_punctuation_only": 79,
+      "missing_without_nearby_ocr": 108,
+      "has_symbol_variant": 218,
+      "missing_with_nearby_ocr": 31,
+      "correct_full_text_assigned_elsewhere_candidate": 5,
+      "has_extra": 2
+    },
+    "candidate_owner_pair_counts": {
+      "missing_without_nearby_ocr": 734,
+      "missing_with_nearby_ocr": 80,
+      "correct_full_text_assigned_elsewhere_candidate": 6
+    },
+    "structure_mismatch_subtypes": {
+      "row_or_column_count": 73,
+      "merged_or_cell_partition": 112
+    },
+    "structure_mismatch_row_count_tables": 66,
+    "structure_mismatch_column_count_tables": 7,
+    "clean_aligned_inexact_tables": 742,
+    "clean_aligned_only_one_bad_cell_tables": 59,
+    "clean_aligned_at_most_three_bad_cells_tables": 151,
+    "clean_aligned_median_bad_cells": 8.0,
+    "diagnostic_equal_after_collapsing_whitespace_tables": 103,
+    "diagnostic_equal_after_removing_all_whitespace_tables": 143,
+    "note": "Whitespace-normalized equality is not a newly computed AccCon. Secondary counts overlap. Missing/extra means empty/nonempty, not every deleted/inserted character."
+  },
+  "primary_counts_by_table_type": {
+    "simple": {
+      "content_only": 221,
+      "mixed_text": 129,
+      "structure_mismatch": 30,
+      "missing_only": 5,
+      "whitespace_only": 34,
+      "symbol_variant_only": 14
+    },
+    "complex": {
+      "whitespace_only": 36,
+      "content_only": 144,
+      "missing_only": 2,
+      "structure_mismatch": 155,
+      "mixed_text": 143,
+      "symbol_variant_only": 13,
+      "extra_only": 1
+    }
+  },
+  "edit_fragment_count_note": "Counts are short non-whitespace edit fragments, not numbers of tables or independently verified OCR errors."
+}

@@ -1,0 +1,15 @@
+{
+  "all_1000_analyzed": true,
+  "all_927_inexact_ids_unique_and_classified": true,
+  "primary_classes_sum": 927,
+  "html_classified_rows": 927,
+  "legacy_798_subset_counts_match": true,
+  "visual_originals_checked": 14,
+  "source_files_unchanged": 6003,
+  "model_inference_rerun": false,
+  "original_scores_recomputed": false,
+  "html_browser_preview": "Blocked local file protocol; offline HTML structure checked, no browser interaction claim",
+  "unit_tests_passed": 55,
+  "independent_review": "Classification, counts, metrics and 14 original-image cases verified; no important issues",
+  "source_mode": "current TATR + PP-OCRv6 small; not official baseline failures"
+}

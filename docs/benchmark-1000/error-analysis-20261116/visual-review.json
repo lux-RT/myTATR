@@ -1,0 +1,156 @@
+[
+  {
+    "id": "PMC3463584_table_1",
+    "primary_category": "whitespace_only",
+    "position": "R1C4",
+    "review_tag": "formatting_difference",
+    "reference_excerpt": "Amount of Heterogeneity",
+    "prediction_excerpt": "Amount of\\nHeterogeneity",
+    "finding": "原图表头确实分两行排版；OCR文字本身与参考相同，差异为保存的换行。属于文本序列化/拼接差异，不是缺字。",
+    "original_image_sha256_verified": "60c169b9d42fc9e2ff93353efb3f00143ec1328df845d00c99d8efd3727b24e8",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC4678235_table_3",
+    "primary_category": "symbol_variant_only",
+    "position": "R2C1",
+    "review_tag": "symbol_form_difference",
+    "reference_excerpt": "Cronbach’s alpha",
+    "prediction_excerpt": "Cronbach's alpha",
+    "finding": "参考和预测使用不同码位的撇号；未发现词义或单元格归属变化，不把严格字符串差异直接称为OCR读错词。",
+    "original_image_sha256_verified": "3dcead513ba633f2441b7e795afec5a6d88273ae7c974594b9125a9091ee328b",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC3366879_table_1",
+    "primary_category": "content_only",
+    "position": "R3C3",
+    "review_tag": "visible_ocr_error",
+    "reference_excerpt": "2.2",
+    "prediction_excerpt": "22",
+    "finding": "原图Intact行的第一个SD为2.2；预测丢掉小数点，数值含义改变，即使数字字符序列仍是22。",
+    "original_image_sha256_verified": "375671af075377ecfba0afae8a18e4cc35ae39326a19be9298c1cbeef87f1e53",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC4735095_table_0",
+    "primary_category": "content_only",
+    "position": "R1C2–C4",
+    "review_tag": "visible_ocr_error",
+    "reference_excerpt": "ρ、α、γ与指数/单位",
+    "prediction_excerpt": "p、a、y及指数缺失",
+    "finding": "原图可见希腊字母和上下标，OCR以拉丁字母替代并遗漏部分指数。单位中个别字母码位另可能存在参考编码差异。",
+    "original_image_sha256_verified": "2e2294dfa46462b3a90e659c70ba5326862271345600f751b72df9059d6bf4ba",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC3036942_table_1",
+    "primary_category": "missing_only",
+    "position": "R2C3",
+    "review_tag": "visible_placeholder_omission",
+    "reference_excerpt": "-",
+    "prediction_excerpt": "",
+    "finding": "原图该格有占位短横线，当前结果为空。不能因为没有字母就当作真空单元格。",
+    "original_image_sha256_verified": "a28bd397338848c69e020d3d98ecb17364756c2f08bf39a2eba6142b7dffb055",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC3428666_table_2",
+    "primary_category": "mixed_text",
+    "position": "R1C1–C2",
+    "review_tag": "verified_cross_column_assignment",
+    "reference_excerpt": "Gene name | UCP1",
+    "prediction_excerpt": "Gene name UCP1 | 空",
+    "finding": "原图是两个表头格；原OCR token把Gene name UCP1识别成同一条框，置信度0.99513。整个框被放入第一列，第二列为空。文字已识出，但粒度和归属错误。",
+    "original_image_sha256_verified": "49ce3ce6d564acbfaa642a09cf15f6cec1f34e4392469a2d6a0bb76fbe67f7c8",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC3640069_table_1",
+    "primary_category": "content_only",
+    "position": "R2C2",
+    "review_tag": "reference_glyph_mismatch_and_ocr_omission",
+    "reference_excerpt": "3.5560.45a",
+    "prediction_excerpt": "3.55±0.45",
+    "finding": "原图可见3.55±0.45及上标a。参考把可见±对应成字符6，疑似PDF字形/编码问题；OCR的±符合图像，但漏了上标a。两种问题同时存在，不能把整格差异全归为OCR识错。",
+    "original_image_sha256_verified": "d4484f9194dbab1a2f1c59542dfac4ff40c5956a33cb0400b900b19e35760382",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC4380490_table_7",
+    "primary_category": "structure_mismatch",
+    "position": "首行",
+    "review_tag": "reference_merge_convention_difference",
+    "reference_excerpt": "两个参考单元格，其中右格空",
+    "prediction_excerpt": "预测为跨两列合并格",
+    "finding": "原图首行文字只在左侧。参考将右侧保留为空格，预测合并整行；这是逻辑合并关系差异，不能仅凭视觉无竖线就断言某一划分绝对正确。",
+    "original_image_sha256_verified": "060d702fac62602256282c3797c3b7a9d99ce834a2c4c47eef50cf5908f0fd63",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC4783308_table_0",
+    "primary_category": "structure_mismatch",
+    "position": "表头",
+    "review_tag": "visible_header_row_partition_difference",
+    "reference_excerpt": "4行，含ARAS radiation detection limits独立跨列表头",
+    "prediction_excerpt": "3行，跨列表头文本并入下一行中列",
+    "finding": "原图分组标题与列标题分行。预测将两层标题合成一个行层级，使文字也进入中间列。结构和文字归属问题并存。",
+    "original_image_sha256_verified": "4acd8f27d724007d886493d8d4be1674570abecb8a52f558850c3104644aec25",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC6073854_table_0",
+    "primary_category": "extra_only",
+    "position": "R4C2",
+    "review_tag": "reference_coverage_difference_candidate",
+    "reference_excerpt": "空",
+    "prediction_excerpt": "α β / -CH2-CH2-CH3",
+    "finding": "原图该处有化学结构式和字母标记，OCR并非凭空生成这些字符。参考把该格文本视为空；需进一步核查数据集对图形/化学式的文字覆盖规则，不应直接认定为OCR幻觉。",
+    "original_image_sha256_verified": "5e7c0937ebaf782771293235ef39c1febba1fc7ac730a4ccbcbe430fef856020",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC5749334_table_4",
+    "primary_category": "mixed_text",
+    "position": "R3C2及R4C6",
+    "review_tag": "verified_row_boundary_assignment",
+    "reference_excerpt": "YSKDNS I RIGSKGDVFVIR；2013; 2 isolates",
+    "prediction_excerpt": "相同文字出现在后一行",
+    "finding": "缓存OCR字符串与参考忽略空白后相同；预测行框与参考文字所在行错位。两条文字对目标预测格的覆盖约29.2%/33.3%，对下一行约62.7%/61.9%，按现规则进入下一行。该证据验证归属机制，并不宣称所有蛋白字符都已人工逐字判读。",
+    "original_image_sha256_verified": "d09de2d42f0b54dd237ae25f40e09e3a4e7fc46dbb018d46781a0aaf2c24b516",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC5700976_table_0",
+    "primary_category": "mixed_text",
+    "position": "年份区间及缺失值格",
+    "review_tag": "mixed_symbol_and_placeholder",
+    "reference_excerpt": "1870–2010与—",
+    "prediction_excerpt": "1870-2010与空",
+    "finding": "同表既有横线码位差异，也有原图可见缺失值横线未提取，不能当作单一问题。",
+    "original_image_sha256_verified": "3d877e5e7d3c994f8ad778e621a4b9e06f9f6e5885ab40ce9151643b6f65aecd",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC3400625_table_3",
+    "primary_category": "structure_mismatch",
+    "position": "表格整体",
+    "review_tag": "reference_coverage_or_crop_boundary_question",
+    "reference_excerpt": "参考只保留1行表头",
+    "prediction_excerpt": "预测2行，图中还可见更多数据文本",
+    "finding": "原图可见Age Range表头及至少两条数据文本，重建参考只含表头两格，预测也未覆盖所有可见数据。存在参考覆盖/裁剪范围疑点，需回查原PDF与XML，不自动修正参考。",
+    "original_image_sha256_verified": "8e33cd92a6ea2ebd1d0c31846bdb5dbfe937c7077a2dd8b2168cbada7ffed9c6",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  },
+  {
+    "id": "PMC5843936_table_2",
+    "primary_category": "content_only",
+    "position": "R1C2及R2C3",
+    "review_tag": "visible_ocr_error",
+    "reference_excerpt": "df；1.827†",
+    "prediction_excerpt": "of；1.8279",
+    "finding": "原图列标题为斜体df，第一条F值带脚注标记；OCR出现字母混淆和脚注符号误读。",
+    "original_image_sha256_verified": "0f7d90cfdc5df2e0f13e29205ab29218299809163f7b900151a76add4509f204",
+    "review_scope": "人工/视觉定性抽查；不是对927张原图逐字复核，也不是随机准确率估计"
+  }
+]

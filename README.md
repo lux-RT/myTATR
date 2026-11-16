@@ -91,6 +91,8 @@ powershell -ExecutionPolicy Bypass -File scripts/setup.ps1
 
 2026-11-11 已完成同一批 1000 张图片的两套评估，均无运行失败：基线的 GriTS Top / Con 为 98.20% / 98.17%，AccCon 为 82.10%；当前 OCR 系统分别为 98.07% / 93.73% 和 7.30%。完整分组结果、置信区间和解释见 [千图双版本测试报告](docs/benchmark-1000/README.md)。
 
+2026-11-16 对原 OCR 版本的全部 927 张未完全一致表格完成错误分类，保留原分数和预测。见 [错误分析结论与原图抽查](docs/benchmark-1000/error-analysis-20261116/FINDINGS.md)、[927 张逐表清单](docs/benchmark-1000/error-analysis-20261116/classification.md)。
+
 ```powershell
 & '..\PubTables-1M复现\.venv-download\Scripts\python.exe' -m unittest discover -s tests -v
 ```
