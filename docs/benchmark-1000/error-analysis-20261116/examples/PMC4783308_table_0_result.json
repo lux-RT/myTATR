@@ -1,0 +1,173 @@
+{
+  "id": "PMC4783308_table_0",
+  "cells": [
+    {
+      "row_nums": [
+        0
+      ],
+      "column_nums": [
+        0
+      ],
+      "bbox": [
+        36.98274612426758,
+        37.16145324707031,
+        85.4771728515625,
+        74.0799560546875
+      ],
+      "cell_text": "Gain",
+      "header": true,
+      "subheader": false
+    },
+    {
+      "row_nums": [
+        0
+      ],
+      "column_nums": [
+        1
+      ],
+      "bbox": [
+        86.09589385986328,
+        37.16145324707031,
+        219.55142211914062,
+        74.0799560546875
+      ],
+      "cell_text": "ARAS radiation detection limits\nMinimum detectable\nactivity (μCi μL-1)",
+      "header": true,
+      "subheader": false
+    },
+    {
+      "row_nums": [
+        0
+      ],
+      "column_nums": [
+        2
+      ],
+      "bbox": [
+        220.07052612304688,
+        37.16145324707031,
+        332.5871887207031,
+        74.0799560546875
+      ],
+      "cell_text": "Maximum detectable\nactivity (μCi μL-1)",
+      "header": true,
+      "subheader": false
+    },
+    {
+      "row_nums": [
+        1
+      ],
+      "column_nums": [
+        0
+      ],
+      "bbox": [
+        36.98274612426758,
+        74.0006103515625,
+        85.4771728515625,
+        90.8709945678711
+      ],
+      "cell_text": "High",
+      "header": false,
+      "subheader": false
+    },
+    {
+      "row_nums": [
+        1
+      ],
+      "column_nums": [
+        1
+      ],
+      "bbox": [
+        86.09589385986328,
+        74.0006103515625,
+        219.55142211914062,
+        90.8709945678711
+      ],
+      "cell_text": "0.02",
+      "header": false,
+      "subheader": false
+    },
+    {
+      "row_nums": [
+        1
+      ],
+      "column_nums": [
+        2
+      ],
+      "bbox": [
+        220.07052612304688,
+        74.0006103515625,
+        332.5871887207031,
+        90.8709945678711
+      ],
+      "cell_text": "120",
+      "header": false,
+      "subheader": false
+    },
+    {
+      "row_nums": [
+        2
+      ],
+      "column_nums": [
+        0
+      ],
+      "bbox": [
+        36.98274612426758,
+        91.18751525878906,
+        85.4771728515625,
+        105.53585052490234
+      ],
+      "cell_text": "Low",
+      "header": false,
+      "subheader": false
+    },
+    {
+      "row_nums": [
+        2
+      ],
+      "column_nums": [
+        1
+      ],
+      "bbox": [
+        86.09589385986328,
+        91.18751525878906,
+        219.55142211914062,
+        105.53585052490234
+      ],
+      "cell_text": "0.3",
+      "header": false,
+      "subheader": false
+    },
+    {
+      "row_nums": [
+        2
+      ],
+      "column_nums": [
+        2
+      ],
+      "bbox": [
+        220.07052612304688,
+        91.18751525878906,
+        332.5871887207031,
+        105.53585052490234
+      ],
+      "cell_text": "2830",
+      "header": false,
+      "subheader": false
+    }
+  ],
+  "category": "complex",
+  "metrics": {
+    "acc_con": 0.0,
+    "grits_top": 0.8571428571428571,
+    "grits_con": 0.8203842940685045,
+    "grits_loc": 0.35196668891416144
+  },
+  "error": null,
+  "seconds": {
+    "structure": 0.5920882001519203,
+    "postprocess": 0.009024399798363447,
+    "ocr": 1.6625
+  },
+  "rows": 3,
+  "columns": 3
+}

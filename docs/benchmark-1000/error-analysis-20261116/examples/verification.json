@@ -1,0 +1,79 @@
+{
+  "examples": 3,
+  "unchanged_copied_files": 12,
+  "original_benchmark_modified": false,
+  "copied_file_sha256": [
+    {
+      "id": "PMC3366879_table_1",
+      "file": "PMC3366879_table_1_original.jpg",
+      "sha256": "375671af075377ecfba0afae8a18e4cc35ae39326a19be9298c1cbeef87f1e53",
+      "source_role": "original_dataset_image"
+    },
+    {
+      "id": "PMC3366879_table_1",
+      "file": "PMC3366879_table_1_overlay.png",
+      "sha256": "4d7f10290a5b0a7d28a4e45579e6879c18c6be97e50fc521612b172a7788a068",
+      "source_role": "unchanged_original_current_export"
+    },
+    {
+      "id": "PMC3366879_table_1",
+      "file": "PMC3366879_table_1_result.html",
+      "sha256": "67556b185bf556df13285b47842ef460d116bc4a5184483a45d61b82eba37284",
+      "source_role": "unchanged_original_current_export"
+    },
+    {
+      "id": "PMC3366879_table_1",
+      "file": "PMC3366879_table_1_result.json",
+      "sha256": "7e6ba66872c0998a47931dbd773d7773df25c5cb79ee1a85515808aabb835d00",
+      "source_role": "unchanged_original_current_export"
+    },
+    {
+      "id": "PMC3428666_table_2",
+      "file": "PMC3428666_table_2_original.jpg",
+      "sha256": "49ce3ce6d564acbfaa642a09cf15f6cec1f34e4392469a2d6a0bb76fbe67f7c8",
+      "source_role": "original_dataset_image"
+    },
+    {
+      "id": "PMC3428666_table_2",
+      "file": "PMC3428666_table_2_overlay.png",
+      "sha256": "af9db7139de94da757b71494d5e1bab01a2144c1ef5383d4b04c9b225d04d47b",
+      "source_role": "unchanged_original_current_export"
+    },
+    {
+      "id": "PMC3428666_table_2",
+      "file": "PMC3428666_table_2_result.html",
+      "sha256": "3bf23d590b9ae5bec2b76e7d0a854e77b4625b71f6d86435853d8951ecc789fb",
+      "source_role": "unchanged_original_current_export"
+    },
+    {
+      "id": "PMC3428666_table_2",
+      "file": "PMC3428666_table_2_result.json",
+      "sha256": "61db6e79c4fd222cf8ff33c8e9bc1ed249774fd5f61be6ca3b38f6a58e6a0d02",
+      "source_role": "unchanged_original_current_export"
+    },
+    {
+      "id": "PMC4783308_table_0",
+      "file": "PMC4783308_table_0_original.jpg",
+      "sha256": "4acd8f27d724007d886493d8d4be1674570abecb8a52f558850c3104644aec25",
+      "source_role": "original_dataset_image"
+    },
+    {
+      "id": "PMC4783308_table_0",
+      "file": "PMC4783308_table_0_overlay.png",
+      "sha256": "fff52568ae598a7bcd2d22abcdbe01ad1a5485398bd5fbd6e2107a98dd7b7317",
+      "source_role": "unchanged_original_current_export"
+    },
+    {
+      "id": "PMC4783308_table_0",
+      "file": "PMC4783308_table_0_result.html",
+      "sha256": "5b909214aaf1ab7e6afd49b01fa03d343042b70776d36e50d4725d4f883bfbcc",
+      "source_role": "unchanged_original_current_export"
+    },
+    {
+      "id": "PMC4783308_table_0",
+      "file": "PMC4783308_table_0_result.json",
+      "sha256": "5ac3e63cde9d49f099eff8df447373c67e422af91d95afb51fbc3ae735f0a8a3",
+      "source_role": "unchanged_original_current_export"
+    }
+  ]
+}

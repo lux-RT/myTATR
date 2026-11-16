@@ -57,6 +57,8 @@
 
 以下是按问题类型选择的定性案例，不是随机准确率抽样。全部 14 张核查记录及原图哈希见 [visual-review.json](visual-review.json)。
 
+[查看三张原图与实际结果的左右圈注对照](examples/README.md)。对照图中的结果来自原实验结构 PNG；背景印刷文字仍是原图文字，实际导出字符以配套 HTML / JSON 为准。
+
 | 案例 | 可核查现象 | 判断 |
 |---|---|---|
 | `PMC3463584_table_1` | `Amount of Heterogeneity` 与 `Amount of\nHeterogeneity` | 原图本身分行，文字相同；属于拼接/保存格式差异 |

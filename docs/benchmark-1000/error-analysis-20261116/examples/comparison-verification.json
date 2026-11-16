@@ -1,0 +1,26 @@
+{
+  "rendering": "PyMuPDF evidence figure: original image embeds and vector circles; captions checked against saved JSON; no generative model used for these comparison figures",
+  "figures": [
+    {
+      "id": "PMC3366879_table_1",
+      "png": "PMC3366879_table_1_comparison.png",
+      "png_sha256": "1e56bbbf5ad32bd7758b70539c0fb821f6625490ace52678ae3c652e62e37b70",
+      "highlights_are_selected_examples_not_exhaustive": true,
+      "caption_source": "PMC3366879_table_1_result.json"
+    },
+    {
+      "id": "PMC3428666_table_2",
+      "png": "PMC3428666_table_2_comparison.png",
+      "png_sha256": "182747fae6f74c2344f5148d6f681d6cc5b97dedaa39333d43fffc4cfd87924f",
+      "highlights_are_selected_examples_not_exhaustive": true,
+      "caption_source": "PMC3428666_table_2_result.json"
+    },
+    {
+      "id": "PMC4783308_table_0",
+      "png": "PMC4783308_table_0_comparison.png",
+      "png_sha256": "25855eacddcd7c9070df05f670d3c6e38f2e7db6a026cbcced6cf017c3b8ff64",
+      "highlights_are_selected_examples_not_exhaustive": true,
+      "caption_source": "PMC4783308_table_0_result.json"
+    }
+  ]
+}

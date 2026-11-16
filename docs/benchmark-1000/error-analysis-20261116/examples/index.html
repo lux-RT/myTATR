@@ -1,0 +1,100 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>三张错误表格：原图与实际结果</title>
+<style>body{font:16px system-ui,"Microsoft YaHei",sans-serif;max-width:1250px;margin:28px auto;padding:0 20px;color:#18283c;line-height:1.7}section{border-top:1px solid #ccd5df;margin-top:30px;padding-top:14px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0}figcaption{font-weight:600;margin-bottom:8px}img{width:100%;height:auto;border:1px solid #d5dce5}.table{overflow-x:auto}table{border-collapse:collapse}td,th{border:1px solid #9aaabd;padding:8px 12px;vertical-align:top}th{background:#eaf1f8}a{color:#155db0}@media(max-width:700px){.pair{grid-template-columns:1fr}}</style>
+<h1>三张错误表格：原图与实际结果</h1><p>取自原 current 流程（TATR + PP-OCRv6 small）的固定千图实验。原图、结构叠加 PNG、HTML 和 JSON 均逐字节复制；没有重新推理、修正预测或修改评分。</p>
+<p>结构图中的蓝框为普通单元格、紫框为跨格单元格、绿框为 OCR 文字框。结构图底图仍然是原始图像，<strong>其中看到的印刷文字不是 OCR 导出文本</strong>。识别出的文字请看每节下方的实际导出表格。</p><section><h2>① 小数点漏识</h2><p>PMC3366879_table_1 — 原图 Intact 行第一个 SD 为 2.2，实际导出为 22。位置：R3C3。结构拓扑一致，但数值内容错误。</p>
+<div class="pair"><figure><figcaption>原图（原文件）</figcaption><img src="PMC3366879_table_1_original.jpg" alt="原图"></figure>
+<figure><figcaption>实际结构叠加图（原实验 PNG）</figcaption><img src="PMC3366879_table_1_overlay.png" alt="结构叠加图"></figure></div>
+<h3>实际导出的表格文字与合并关系</h3><div class="table"><table>
+<tr>
+<th rowspan="1" colspan="1"></th>
+<th rowspan="1" colspan="2">Litter size</th>
+<th rowspan="1" colspan="2">Litter size</th>
+<th rowspan="2" colspan="1">Mortality</th>
+</tr>
+<tr>
+<th rowspan="1" colspan="1"></th>
+<th rowspan="1" colspan="1">Week 1</th>
+<th rowspan="1" colspan="1">SD</th>
+<th rowspan="1" colspan="1">Week 2</th>
+<th rowspan="1" colspan="1">SD</th>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Intact</td>
+<td rowspan="1" colspan="1">12.3</td>
+<td rowspan="1" colspan="1">22</td>
+<td rowspan="1" colspan="1">11.5</td>
+<td rowspan="1" colspan="1">1.9</td>
+<td rowspan="1" colspan="1">0.8°</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Grinded</td>
+<td rowspan="1" colspan="1">12.0</td>
+<td rowspan="1" colspan="1">1.1</td>
+<td rowspan="1" colspan="1">11.6</td>
+<td rowspan="1" colspan="1">1.8</td>
+<td rowspan="1" colspan="1">0.4b</td>
+</tr>
+</table></div>
+<p><a href="PMC3366879_table_1_result.html">打开原始结果 HTML</a> · <a href="PMC3366879_table_1_result.json">原始 JSON</a></p></section>
+<section><h2>② 跨列文字分配错误</h2><p>PMC3428666_table_2 — 原图表头 Gene name 和 UCP1 分属两格；导出第一格为 Gene name UCP1，第二格为空。原 OCR 将其合成一个长框，当前分配规则将整个框放入第一列。</p>
+<div class="pair"><figure><figcaption>原图（原文件）</figcaption><img src="PMC3428666_table_2_original.jpg" alt="原图"></figure>
+<figure><figcaption>实际结构叠加图（原实验 PNG）</figcaption><img src="PMC3428666_table_2_overlay.png" alt="结构叠加图"></figure></div>
+<h3>实际导出的表格文字与合并关系</h3><div class="table"><table>
+<tr>
+<th rowspan="1" colspan="1">Gene name UCP1</th>
+<th rowspan="1" colspan="1"></th>
+<th rowspan="1" colspan="1">UCP2</th>
+<th rowspan="1" colspan="1">UCP3</th>
+<th rowspan="1" colspan="1">UCP3L</th>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">UCP1</td>
+<td rowspan="1" colspan="1"></td>
+<td rowspan="1" colspan="1">0.559±0.126*</td>
+<td rowspan="1" colspan="1">0.846±0.323*</td>
+<td rowspan="1" colspan="1">0.729±0.126*</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">UCP2</td>
+<td rowspan="1" colspan="1">0.063±0.046</td>
+<td rowspan="1" colspan="1"></td>
+<td rowspan="1" colspan="1"></td>
+<td rowspan="1" colspan="1"></td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">UCP3</td>
+<td rowspan="1" colspan="1"></td>
+<td rowspan="1" colspan="1">0.128±0.044 0.016±0.045</td>
+<td rowspan="1" colspan="1"></td>
+<td rowspan="1" colspan="1">0.242±0.121*</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">UCP3L</td>
+<td rowspan="1" colspan="1">0.113±0.057</td>
+<td rowspan="1" colspan="1"></td>
+<td rowspan="1" colspan="1"></td>
+<td rowspan="1" colspan="1"></td>
+</tr>
+</table></div>
+<p><a href="PMC3428666_table_2_result.html">打开原始结果 HTML</a> · <a href="PMC3428666_table_2_result.json">原始 JSON</a></p></section>
+<section><h2>③ 表头层级与文字归属错误</h2><p>PMC4783308_table_0 — 参考为 4 行、3 列；当前预测为 3 行、3 列。独立跨列表头 ARAS radiation detection limits 被并入下一层中间列，结构与文字归属同时发生变化。</p>
+<div class="pair"><figure><figcaption>原图（原文件）</figcaption><img src="PMC4783308_table_0_original.jpg" alt="原图"></figure>
+<figure><figcaption>实际结构叠加图（原实验 PNG）</figcaption><img src="PMC4783308_table_0_overlay.png" alt="结构叠加图"></figure></div>
+<h3>实际导出的表格文字与合并关系</h3><div class="table"><table>
+<tr>
+<th rowspan="1" colspan="1">Gain</th>
+<th rowspan="1" colspan="1">ARAS radiation detection limits<br>Minimum detectable<br>activity (μCi μL-1)</th>
+<th rowspan="1" colspan="1">Maximum detectable<br>activity (μCi μL-1)</th>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">High</td>
+<td rowspan="1" colspan="1">0.02</td>
+<td rowspan="1" colspan="1">120</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Low</td>
+<td rowspan="1" colspan="1">0.3</td>
+<td rowspan="1" colspan="1">2830</td>
+</tr>
+</table></div>
+<p><a href="PMC4783308_table_0_result.html">打开原始结果 HTML</a> · <a href="PMC4783308_table_0_result.json">原始 JSON</a></p></section><p>来源与许可：<a href="../../full-results/SOURCE.txt">SOURCE</a> · <a href="../../full-results/DATA_LICENSE.txt">CDLA-Permissive-2.0</a></p></html>
